@@ -90,7 +90,7 @@
     <div class="block-contact">
         <p>Наши контакты</p>
         <div class="">
-            <a href="#"  class="soch-a">
+            <a href="https://www.facebook.com/PartnershipUkraine/"  class="soch-a">
                 <img src="img/fesbuc.png" alt="/" class="soch">
             </a>
             <a href="#" class="soch-a">
@@ -100,13 +100,14 @@
         <p class="block-contact-p"><img src="img/contact-img1.png" alt="/" class="contact-img"> www.pppppppp.com</p>
         <p class="block-contact-p"><img src="img/contact-img2.png" alt="/" class="contact-img"> info@hhhhhhhh.com</p>
         <p class="block-contact-p"><img src="img/contact-img3.png" alt="/" class="contact-img"> Partnership Ukraine</p>
-        <p class="block-contact-p"><img src="img/contact-img4.png" alt="/" class="contact-img"> 04071, Киев, ул. Крещатик, 1</p>
+        <p class="block-contact-p"><img src="img/contact-img4.png" alt="/" class="contact-img"> 04074, Киев, ул. Автозаводская, 24/2</p>
         <p class="block-contact-p"><img src="img/contact-img5.png" alt="/" class="contact-img"> +38 096 6000 300</p>
         <p class="block-contact-p"><img src="img/contact-img6.png" alt="/" class="contact-img"> +38 096 6000 300</p>
         <p class="block-contact-p"><img src="img/contact-img7.png" alt="/" class="contact-img"> +38 096 6000 300</p>
         <p class="block-contact-p"><img src="img/contact-img8.png" alt="/" class="contact-img"> +38 096 6000 300</p>
     </div>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.3197569384574!2d30.456902316066557!3d50.509616979483575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d27ee7a8623f%3A0x7aa138f97088a382!2z0LLRg9C70LjRhtGPINCf0YDRltC-0YDRgdGM0LrQsCwgMjEsINCa0LjRl9CyLCDQo9C60YDQsNC40L3QsA!5e0!3m2!1sru!2sru!4v1511899169450" class="map2" frameborder="0" style="border:0" allowfullscreen></iframe>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d616.3074625329248!2d30.458694648092234!3d50.50688479850154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d278ac6b36df%3A0x935752daa9dceda4!2z0YPQuy4g0JDQstGC0L7Qt9Cw0LLQvtC00YHQutCw0Y8sIDI0LzIsINCa0LjQtdCyLCDQo9C60YDQsNC40L3QsCwgMDIwMDA!5e0!3m2!1sru!2sru!4v1518094000855" class="map" frameborder="0" style="border:0" allowfullscreen></iframe>
+
 </div>
 
 
@@ -117,36 +118,40 @@
 <script src="js/bootstrap.js"></script>
 <script src="js/main.js"></script>
 <div class="modal fade" id="squarespaceModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="lineModalLabel">Остаьвте заявку и мы свяжемся с вами в ближайшее время</h4>
-            </div>
-            <div class="modal-body">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                  <h4 class="modal-title" id="lineModalLabel">Остаьвте заявку и мы свяжемся с вами в ближайшее время</h4>
+              </div>
+              <div class="modal-body">
 
-                <!-- content goes here -->
-                <form name="feedback" action="" method="post">
+                  <!-- content goes here -->
+                  <form name="feedback"  method="post">
+  <input type="hidden" name="project_name" value="Партнерство украина">
+    <input type="hidden" name="admin_email" value="info@partnership.kyiv.com">
+    <input type="hidden" name="form_subject" value="Заявка со страницы с контактами">
+                      <!-- основное содержимое (тело) модального окна -->
+                      <div class="form-group">
+                          <input type="text"  class="form-control" id="name" name="Имя" placeholder="Ваше имя" required>
+                      </div>
+                      <div class="form-group">
+                          <input type="text" class="form-control" id="email" name="е-mail" placeholder="Ваш е-mail" required>
+                      </div>
+                      <div class="form-group">
+                          <input type="text" class="form-control" id="phone" name="Номер телефона" placeholder="Ваш номер телефона" required>
+                      </div>
+     <div class="form-group">
+                          <textarea name="Сообщение" class="form-control" id="mess" cols="30" rows="10" placeholder="Сообщение" style="resize: none;"></textarea>
+                      </div>
+                      <button class="btn btn-model"  type="button"  data-dismiss="modal">Оставить заявку</button>
+                  </form>
 
-                    <!-- основное содержимое (тело) модального окна -->
-                    <div class="form-group">
-                        <input type="text"  class="form-control" id="name" placeholder="Ваше имя" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="email" placeholder="Ваш е-mail" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="phone" placeholder="Ваш номер телефона" required>
-                    </div>
+              </div>
 
-                    <button class="btn btn-model"  type="button"  data-dismiss="modal">СВЯЗАТЬСЯ С НАМИ</button>
-                </form>
-
-            </div>
-
-        </div>
-    </div>
-</div>
+          </div>
+      </div>
+  </div>
 
 </body>
 </html>

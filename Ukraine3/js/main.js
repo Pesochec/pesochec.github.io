@@ -1,5 +1,6 @@
 //меню
 $('document').ready(function(){
+
     var removed = false;
     $('#modal').modal();
     $('#brand2').hide();
@@ -26,10 +27,33 @@ $('document').ready(function(){
         }
     });
 
-
+$("form").submit(function() { //Change
+        var th = $(this);
+        $.ajax({
+            type: "POST",
+            url: "mail.php", //Change
+            data: th.serialize()
+        }).done(function() {
+            alert("Заявка успешно отправлена");
+            setTimeout(function() {
+                // Done Functions
+                th.trigger("reset");
+            }, 1000);
+        });
+        return false;
+    });
+ $('.jqueryOptions').hide();
+ $('.current-opt').show();
+  $('#choose').change(function() {
+    $('.jqueryOptions').slideUp();
+    $('.jqueryOptions').removeClass('current-opt');
+    $("." + $(this).val()).slideDown();
+    $("." + $(this).val()).addClass('current-opt');
+  });
 });
 
 $(function() {
+   
     // при нажатии на кнопку scrollup
     $('.scrollup').click(function() {
         // переместиться в верхнюю часть страницы
