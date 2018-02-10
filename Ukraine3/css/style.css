@@ -1575,9 +1575,12 @@ td{
         font-size: 15px;
     }
 }
-
-
-
+.jqueryOptions{
+    display: none!important;
+}
+.jqueryOptions.current-opt{
+    display: block!important;
+}
 
 
 
