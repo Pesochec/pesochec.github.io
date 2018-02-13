@@ -33,9 +33,10 @@
 	<selection class="menu">
 		<div class="container">
 			<div class="row">
-				<div class="col-xl-2 col-sm-6"><div class="pasificro">Baellerry luxury </div></div>
-				<div class="col-xl-8  d-none d-xl-block">
-					<nav class="mnu">
+				<div class="col-xl-2 col-md-8 col-sm-6 col-9"><div class="pasificro">Baellerry luxury </div></div>
+				<div class="col-xl-8 col-md-4 col-lg-4 col-3">
+					<a href="" class="toggle-mnu  d-xl-none "><span></span></a>
+					<nav class="mnu desctop d-none d-xl-block">
 						<ul>
 							<li><a href="#">О портмоне</a></li>
 							<li><a href="#">Вместительность</a></li>
@@ -45,9 +46,25 @@
 						</ul>
 					</nav>
 				</div>
-				<div class="col-xl-2 col-sm-6">
-					<div class="phone"><a href="tel:+3800963800555">096-380-05-55</a></div>
-					<a href="#modalCall" class="button">Заказать звонок</a>
+				<div class="col-12 d-xl-none">
+					<nav class="hidden-mnu 	d-xl-none">
+						<ul>
+							<li><a href="#">О портмоне</a></li>
+							<li><a href="#">Вместительность</a></li>
+							<li><a href="#">Подарок</a></li>
+							<li><a href="#">Отзывы</a></li>
+							<li><a href="#">Почему нужно купить ?</a></li>
+						</ul>
+						<div class="phone d-none d-md-block"><a href="tel:+3800963800555">096-380-05-55</a></div>
+						<a href="#modalCall" class="button popup-with-zoom-anim">Заказать звонок</a>
+					</nav>
+				</div>
+				<div class="col-xl-2 col-sm-6 d-none d-xl-block">
+					<div class="phone "><a href="tel:+3800963800555">096-380-05-55</a></div>
+					<a href="#modalCall" class="button popup-with-zoom-anim">Заказать звонок</a>
+				</div>
+				<div class="col-md-4 ">
+					
 				</div>
 			</div>
 		</div>
@@ -64,8 +81,13 @@
 				</div>
 			</div>
 			<div class="row ">
-				<div class="col-lg-8 col-md-6 d-none d-lg-block d-xl-block"><img src="img/stock.png" alt="" class="img-fluid"></div>
-				<div class="col-lg-4 col-sm-12 col-md-12">
+				<div class="col-lg-8 col-md-6 col-12 col-sm-12">
+					<div class="img">
+						<img src="img/stock.png" alt="" class="img-fluid d-none d-xl-block">
+						<img src="img/stock-mobile.png" alt="" class="img-fluid d-xl-none d-inline">
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-12 col-md-6 col-12">
 					<div class="col-lg-11 offset-lg-1 col-md-12">
 						<div class="form-container">
 							<form action="">
@@ -94,15 +116,15 @@
 			</div>
 			<div class="row align-items-center">
 				<div class="col-md-10"><img src="img/1colors.jpg"  class="img-fluid" alt=""></div>
-				<div class="col-md-2"><a href="#modalCall" class="button">Заказать </a></div>
+				<div class="col-md-2"><a href="#modalCall" class="button popup-with-zoom-anim">Заказать </a></div>
 			</div>
 			<div class="row align-items-center">
 				<div class="col-md-10"><img src="img/2colors.jpg"  class="img-fluid" alt=""></div>
-				<div class="col-md-2"><a href="#modalCall" class="button">Заказать </a></div>
+				<div class="col-md-2"><a href="#modalCall" class="button popup-with-zoom-anim">Заказать </a></div>
 			</div>
 			<div class="row align-items-center">
 				<div class="col-md-10"><img src="img/3colors.jpg"  class="img-fluid" alt=""></div>
-				<div class="col-md-2"><a href="#modalCall" class="button">Заказать </a></div>
+				<div class="col-md-2"><a href="#modalCall" class="button popup-with-zoom-anim">Заказать </a></div>
 			</div>
 		</div>
 	</section>
@@ -156,17 +178,17 @@
 				<div class="col-md-12"><h2>В чем прелесть мини-зонтика</h2></div>
 			</div>
 			<div class="row">
-				<div class="col-md-4">
+				<div class="col-lg-4">
 					<img src="img/Icon/box.png" class="img-fluid" alt="">
 					<p class="title-zont">Компактность</p>
 					<p class="desc-zont">Размер в закрытом состоянии <br> всего 17 сантиметров</p>
 				</div>
-				<div class="col-md-4">
+				<div class="col-lg-4">
 					<img src="img/Icon/quality.png" class="img-fluid" alt="">
 					<p class="title-zont">Надежность</p>
 					<p class="desc-zont">Каркас и спицы сделаны из<br>алюминия, а ткань купола выполенна из<br>водооталкивающего полиэстерового эпонжа.</p>
 				</div>
-				<div class="col-md-4">
+				<div class="col-lg-4">
 					<img src="img/Icon/sunbed.png" class="img-fluid" alt="">
 					<p class="title-zont">Удобство</p>
 					<p class="desc-zont">В сложенном виде зонтик<br>держится за счет гибкой клипсы</p>
@@ -198,7 +220,7 @@
 		</div>
 	</section>
 
-	<section class="gift">
+	<section class="gift d-xs-none">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12"><h2>	Идеальный подарок для девушки</h2>
@@ -206,23 +228,30 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-4">
-					<img src="img/zont/yellow.jpg" class="img-fluid" alt="">
+				<div class="col-md-4 d-none d-lg-inline">
+					<img src="img/tovar/1z.png" class="img-fluid" alt="">
 				</div>
-				<div class="col-md-4">
-					<img src="img/zont/green.jpg" class="img-fluid" alt="">
+				<div class="col-md-4 d-none d-lg-inline">
+					<img src="img/tovar/2z.png" class="img-fluid" alt="">
 				</div>
-				<div class="col-md-4">
-					<img src="img/zont/blue.jpg" class="img-fluid" alt="">
+				<div class="col-md-4 d-none d-lg-inline">
+					<img src="img/tovar/3z.png" class="img-fluid" alt="">
+				</div>
+				<div class="col-12 d-xl-none d-lg-none d-block">
+					<div class="owl-theme owl-carousel gift-c">
+						<div class="item"><img src="img/tovar/1z.png" class="img-fluid" alt=""></div>
+						<div class="item"><img src="img/tovar/2z.png" class="img-fluid" alt=""></div>
+						<div class="item"><img src="img/tovar/3z.png" class="img-fluid" alt=""></div>
+					</div>
 				</div>
 				<div class="col-md-12">
 					<h4>Заказать лучший подарок на 8 марта</h4>
-					<a href="#modalCall" class="button">Заказать</a>
+					<a href="#modalCall" class="button popup-with-zoom-anim">Заказать</a>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="portmone-size">
+	<section class="portmone-size d-none d-md-block">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12"><h2>	Вместительность портмоне</h2>
@@ -247,9 +276,9 @@
 
 					<div class="col-lg">
 						<div class="color-portmone">
-							<div class="portmone-blue"></div>
-							<div class="portmone-yellow" style="display: none;"></div>
-							<div class="portmone-black" style="display: none;"></div>
+							<div class="portmone-blue"><img src="img/tovar/1p.png" class="img-fluid" alt=""></div>
+							<div class="portmone-yellow" style="display: none;"><img src="img/tovar/3p.png" class="img-fluid" alt=""></div>
+							<div class="portmone-black" style="display: none;"><img src="img/tovar/2p.png" class="img-fluid" alt=""></div>
 							<div class="portmone-color-blue radio active" data-color="Голубой"></div>
 							<div class="portmone-color-yellow radio" data-color="Желтый"></div>
 							<div class="portmone-color-black radio" data-color="Зеленый"></div>
@@ -263,9 +292,9 @@
 					</div>
 					<div class="col-lg">
 						<div class="color-zont">
-							<div class="zont-blue"></div>
-							<div class="zont-yellow" style="display: none;"></div>
-							<div class="zont-black" style="display: none;"></div>
+							<div class="zont-blue"><img src="img/tovar/1z.png" class="img-fluid" alt=""></div>
+							<div class="zont-yellow" style="display: none;"><img src="img/tovar/2z.png" class="img-fluid" alt=""></div>
+							<div class="zont-black" style="display: none;"><img src="img/tovar/3z.png" class="img-fluid" alt=""></div>
 							<div class="zont-color-blue radio active" data-color="Голубой"></div>
 							<div class="zont-color-yellow radio" data-color="Желтый"></div>
 							<div class="zont-color-black radio" data-color="Зеленый"></div>
@@ -284,7 +313,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-8 offset-md-2">
+				<div class="col-md-12">
 					<div class="slider-otz owl-theme owl-carousel">
 						<div class="item">
 							<div class="avatar"><img src="img/otz/ava1.png" alt=""></div>
@@ -374,8 +403,13 @@
 								</div>
 							</div>
 							<div class="row ">
-								<div class="col-lg-8 col-md-6 d-none d-lg-block d-xl-block"><img src="img/stock.png" alt="" class="img-fluid"></div>
-								<div class="col-lg-4 col-sm-12 col-md-12">
+								<div class="col-lg-8 col-md-6 col-12 col-sm-12">
+									<div class="img">
+										<img src="img/stock.png" alt="" class="img-fluid d-none d-xl-block">
+										<img src="img/stock-mobile.png" alt="" class="img-fluid d-xl-none d-inline">
+									</div>
+								</div>
+								<div class="col-lg-4 col-sm-12 col-md-6 col-12">
 									<div class="col-lg-11 offset-lg-1 col-md-12">
 										<div class="form-container">
 											<form action="">
@@ -403,28 +437,36 @@
 
 								<div class="col-md-6">
 									<div class="black">
+										<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1511.05244927627!2d30.61966743577783!3d50.43593764811291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c568143feba1%3A0x81deed3e317d95af!2z0JrQvtC80YTQvtGA0YIg0KLQsNGD0L0!5e0!3m2!1sru!2sru!4v1518524403820" width="100%" height="480" frameborder="0" style="border:0" allowfullscreen></iframe>
 									</div>
 								</div>
 
 								<div class="col-md-6 ">
 									<div class="minblack row align-items-center">
-									<div class="">
-									<div class="offset-md-2 col-md ">
-										<h2>Контакты</h2>
-										<div class="contact"><span class="marker"></span><span class="text">Самовывоз: Киев, Регенераторная, 4
-<br>(Комфорт Таун)</span>
-</div>
-		<div class="contact"><span class="phone"></span><span class="text">096-380-05-55</span>
-</div>
-		<div class="contact"><span class="envelope"></span><span class="text">luxgift@gmail.com</span>
-</div>
-										</div>
+										<div class="">
+											<div class="offset-md-2 col-md ">
+												<h2>Контакты</h2>
+												<div class="contact"><span class="marker"></span><span class="text">Самовывоз: Киев, Регенераторная, 4
+													<br>(Комфорт Таун)</span>
+												</div>
+												<div class="contact"><span class="phone"></span><span class="text">096-380-05-55</span>
+												</div>
+												<div class="contact"><span class="envelope"></span><span class="text">luxgift@gmail.com</span>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</footer>
+					<div id="modalCall" class="zoom-anim-dialog mfp-hide">
+						<form action="">
+							<input type="text" name="Имя" placeholder="Имя" required>
+							<input type="text" name="Телефон" placeholder="Телефон" required>
+							<button class="button">Заказать со скидкой</button>
+						</form>
+					</div>
 					<link rel="stylesheet" href="css/main.min.css">
 					<script src="js/scripts.min.js"></script>
 
