@@ -12,7 +12,13 @@
     <link href="css/font-awesome.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
-
+    <style>
+        @media screen and (max-width: 650px) {
+            .widget-content{
+                overflow: auto;
+            }
+        }
+    </style>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -73,7 +79,6 @@
                     <li><a href="index.html">Главная</a></li>
                     <li><a href="page4.html">Услуги и цены</a></li>
                     <li><a href="page.html">Наша команда</a></li>
-                    <li><a href="page3.html"> Блог</a></li>
                     <li><a href="page2.html">Контакты</a></li>
                 </ul>
 
@@ -121,58 +126,196 @@
             <table class="table table-striped table-responsive">
                 <tbody>
                     <tr>
-                        <td class="header-td">Head 1</td>
-                        <td class="header-td">Head 2</td>
-                        <td class="header-td">Head 3</td>
-                        <td class="header-td"></td>
+                        <td class="header-td">Наименование услуги</td>
+                        <td class="header-td">без операций</td>
+                        <td class="header-td">до 100 операций в мес</td>
+                        <td class="header-td">(до 250 операций в мес)</td>
+                        <td class="header-td">(до 500 операций в мес)</td>
+                        <td class="header-td">за каждую операцию сверх тарифа</td>
                     </tr>
                     <tr>
-                        <td>Head 1</td>
-                        <td>Head 2</td>
-                        <td>Head 3</td>
-                        <td class="td-actions">
-                            <div class="checkbox checkbox-danger">
-                                <input id="checkbox6" type="checkbox" >
-                                <label for="checkbox6">
-                                </label>
-                            </div>
-                        </td>
+                        <td>Общая система налогообложения без НДС</td>
+                        <td>2500</td>
+                        <td>3500</td>
+                        <td>4500</td>
+                        <td>6000</td>
+                        <td>35</td>
                     </tr>
                     <tr>
-                        <td>Head 4</td>
-                        <td>Head 5</td>
-                        <td>Head 6</td>
-                        <td class="td-actions">
-                            <div class="checkbox checkbox-danger">
-                                <input id="checkbox7" type="checkbox" >
-                                <label for="checkbox7">
-                                </label>
-                            </div>
-                        </td>
+                        <td>Общая система налогообложения с НДС</td>
+                        <td>3000</td>
+                        <td>4000</td>
+                        <td>5000</td>
+                        <td>7500</td>
+                        <td>50</td>
                     </tr>
                     <tr>
-                        <td>Head 7</td>
-                        <td>Head 8</td>
-                        <td>Head 9</td>
-                        <td class="td-actions">
-                            <div class="checkbox checkbox-danger">
-                                <input id="checkbox8" type="checkbox" >
-                                <label for="checkbox8">
-                                </label>
-                            </div>
-                        </td>
+                        <td>Упрощенная система налогообложения без НДС</td>
+                        <td>2000</td>
+                        <td>2500</td>
+                        <td>3500</td>
+                        <td>5000</td>
+                        <td>35</td>
                     </tr>
                     <tr>
-                        <td>Head 10</td>
-                        <td>Head 11</td>
-                        <td>Head 12</td>
-                        <td class="td-actions">
-                            <div class="checkbox checkbox-danger">
-                                <input id="checkbox9" type="checkbox" >
-                                <label for="checkbox9">
-                                </label>
-                            </div>
-                        </td>
+                        <td>Упрощенная система налогообложения с НДС</td>
+                        <td>2500</td>
+                        <td>3500</td>
+                        <td>4500</td>
+                        <td>6000</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Упрощенная система налогообложения 1,2 группа</td>
+                        <td>500</td>
+                        <td>1500</td>
+                        <td>2500</td>
+                        <td>5000</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>Упрощенная система налогообложения 3 группа без НДС</td>
+                        <td>1000</td>
+                        <td>2500</td>
+                        <td>3500 </td>
+                        <td>4500</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>Упрощенная система налогообложения 3 группа с НДС</td>
+                        <td>2500</td>
+                        <td>3500</td>
+                        <td>4500</td>
+                        <td>6000</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Общая система налогообложения без НДС</td>
+                        <td>2500</td>
+                        <td>3500</td>
+                        <td>4500</td>
+                        <td>6000</td>
+                        <td>35</td>
+                    </tr>
+                    <tr>
+                        <td>Общая система налогообложения c НДС</td>
+                        <td>3000</td>
+                        <td>4000</td>
+                        <td>5000</td>
+                        <td>7500</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Учет заработной платы и рабочего времени </td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Расчет начислений по больничному листу</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Расчет начислений отпускных </td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Расчет прочих компенсационных и поощрительных выплат</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Консультирование, час </td>
+                        <td>250</td>
+                        <td>250</td>
+                        <td>250</td>
+                        <td>250</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Разработка учетной политики предприятия, шт</td>
+                        <td>1000</td>
+                        <td>1000</td>
+                        <td>1000</td>
+                        <td>1000</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Обучение персонала, час</td>
+                        <td>300</td>
+                        <td>300</td>
+                        <td>300</td>
+                        <td>300</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Разработка должностной инструкции сотрудникам, шт</td>
+                        <td>250</td>
+                        <td>250</td>
+                        <td>250</td>
+                        <td>250</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Создание новой учетной базы в 1С, шт</td>
+                        <td>500</td>
+                        <td>500</td>
+                        <td>500</td>
+                        <td>500</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Отправка платежей ч/з клиент-банк, шт</td>
+                        <td>35</td>
+                        <td>35</td>
+                        <td>35</td>
+                        <td>35</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Подготовка документов для получения электронной цифровой подписи, пакет</td>
+                        <td>500</td>
+                        <td>500</td>
+                        <td>500</td>
+                        <td>500</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Подготовка документов для кредитования, пакет</td>
+                        <td>от 1000</td>
+                        <td>от 1000</td>
+                        <td>от 1000</td>
+                        <td>от 1000</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Подготовка документов для проверки, пакет</td>
+                        <td>от 1000</td>
+                        <td>от 1000</td>
+                        <td>от 1000</td>
+                        <td>от 1000</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Подготовка документов для бюджетного возмещения НДС (единоразово), пакет</td>
+                        <td>от 3000</td>
+                        <td>от 3000</td>
+                        <td>от 3000</td>
+                        <td>от 3000</td>
+                        <td></td>
                     </tr>
 
                 </tbody>
@@ -219,69 +362,81 @@
     <div class="widget stacked widget-table action-table">
         <div class="widget-content">
             <table class="table table-striped table-responsive">
-                <tbody>
-                    <tr>
-                        <td class="header-td">Head 1</td>
-                        <td class="header-td">Head 2</td>
-                        <td class="header-td">Head 3</td>
-                        <td class="header-td"></td>
-                    </tr>
-                    <tr>
-                        <td>Head 1</td>
-                        <td>Head 2</td>
-                        <td>Head 3</td>
-                        <td class="td-actions">
-                            <div class="checkbox checkbox-danger">
-                                <input id="checkbox11" type="checkbox" checked="">
-                                <label for="checkbox11">
-                                </label>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Head 4</td>
-                        <td>Head 5</td>
-                        <td>Head 6</td>
-                        <td class="td-actions">
-                            <div class="checkbox checkbox-danger">
-                                <input id="checkbox12" type="checkbox" >
-                                <label for="checkbox12">
-                                </label>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Head 7</td>
-                        <td>Head 8</td>
-                        <td>Head 9</td>
-                        <td class="td-actions">
-                            <div class="checkbox checkbox-danger">
-                                <input id="checkbox13" type="checkbox" >
-                                <label for="checkbox13">
-                                </label>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Head 10</td>
-                        <td>Head 11</td>
-                        <td>Head 12</td>
-                        <td class="td-actions">
-                            <div class="checkbox checkbox-danger">
-                                <input id="checkbox14" type="checkbox" >
-                                <label for="checkbox14">
-                                </label>
-                            </div>
-                        </td>
-                    </tr>
+               <tbody>
+                <tr>
+                    <td class="header-td">Наименование услуги</td>
+                    <td class="header-td">Стоимость, грн</td>
+                </tr>
+                <tr>
+                    <td>Финансовая модель для Start-up (excel с формулами)</td>
+                    <td >2500</td>
+                </tr>
+                <tr>
+                    <td>Оценка эффективности инвестиций</td>
+                    <td>1000</td>
+                </tr>
+                <tr>
+                    <td>Карта рисков предприятия</td>
+                    <td>от 500</td>
+                </tr>
+                <tr>
+                    <td>SWOT анализ предприятия</td>
+                    <td>500</td>
+                </tr>
+                <tr>
+                    <td>Бизнес-план (word)</td>
+                    <td>от 1000</td>
+                </tr>
+                <tr>
+                    <td>Презентация проекта, направления, продукта и тд (pptx, pdf), 1стр</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>Учетная политика (управленческий учет)</td>
+                    <td>1000</td>
+                </tr>
+                <tr>
+                    <td>Разработка и внедрение управленческого учета</td>
+                    <td>от 2500</td>
+                </tr>
+                <tr>
+                    <td>Разработка и внедрение систем бюджетирования</td>
+                    <td>от 2500</td>
+                </tr>
+                <tr>
+                    <td>Финансовая отчетность (P&L, CashFlow, BalanceSheet)</td>
+                    <td>от 1000</td>
+                </tr>
+                <tr>
+                    <td>Автоматизация учета и отчетности, час</td>
+                    <td>250</td>
+                </tr>
+                <tr>
+                    <td>Консультирование, час</td>
+                    <td>250</td>
+                </tr>
+                <tr>
+                    <td>Обучение персонала, час</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td>Регистрация и применение предприятия иностранных юрисдикций</td>
+                    <td>договорная</td>
+                </tr>
+                <tr>
+                    <td>Работа с иностранными банками и платежными системами </td>
+                    <td>договорная</td>
+                </tr>
+                <tr>
+                    <td>Комплексное ведение управленческого и финансового учета, мес</td>
+                    <td>от 5000</td>
+                </tr>
+            </tbody>
+        </table>
+    </div> <!-- /widget-content -->
 
-                </tbody>
-            </table>
+</div> <!-- /widget -->
 
-        </div> <!-- /widget-content -->
-
-    </div> <!-- /widget -->
-</div>
 <div class=" blog-bottom">
     <p  class=" blog-bottom-p"> Мне нужны услуги финансиста </p>
     <a class="btn btn-header2" data-toggle="modal" data-target="#squarespaceModal">Отправить заявку</a>
@@ -321,68 +476,77 @@
     <div class="widget stacked widget-table action-table">
         <div class="widget-content">
             <table class="table table-striped table-responsive">
-                <tbody>
-                    <tr>
-                        <td class="header-td">Head 1</td>
-                        <td class="header-td">Head 2</td>
-                        <td class="header-td">Head 3</td>
-                        <td class="header-td"></td>
-                    </tr>
-                    <tr>
-                        <td>Head 1</td>
-                        <td>Head 2</td>
-                        <td>Head 3</td>
-                        <td class="td-actions">
-                            <div class="checkbox checkbox-danger">
-                                <input id="checkbox18" type="checkbox" checked="">
-                                <label for="checkbox18">
-                                </label>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Head 4</td>
-                        <td>Head 5</td>
-                        <td>Head 6</td>
-                        <td class="td-actions">
-                            <div class="checkbox checkbox-danger">
-                                <input id="checkbox19" type="checkbox" >
-                                <label for="checkbox19">
-                                </label>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Head 7</td>
-                        <td>Head 8</td>
-                        <td>Head 9</td>
-                        <td class="td-actions">
-                            <div class="checkbox checkbox-danger">
-                                <input id="checkbox21" type="checkbox" >
-                                <label for="checkbox21">
-                                </label>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Head 10</td>
-                        <td>Head 11</td>
-                        <td>Head 12</td>
-                        <td class="td-actions">
-                            <div class="checkbox checkbox-danger">
-                                <input id="checkbox22" type="checkbox" >
-                                <label for="checkbox22">
-                                </label>
-                            </div>
-                        </td>
-                    </tr>
+             <tbody>
+                <tr>
+                    <td class="header-td">Наименование услуги</td>
+                    <td class="header-td">Стоимость, грн</td>
+                </tr>
+                <tr>
+                    <td>Штатное расписание, шт</td>
+                    <td>250</td>
+                </tr>
+                <tr>
+                    <td>Прием на работу, чел</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>Увольнение, чел</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>Перевод, чел</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>Внутренние приказы и распоряжения, шт</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>Внутренние нормативные документы (трудовой распорядок, коллективный договор, пр)</td>
+                    <td>250</td>
+                </tr>
+                <tr>
+                    <td>Формирование личного дела, чел</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>Учет и заполнение трудовых книг</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>Поиск, подбор и оценка персонала, чел </td>
+                    <td>50% оклада</td>
+                </tr>
+                <tr>
+                    <td>Разработка должностной инструкции, шт</td>
+                    <td>250</td>
+                </tr>
+                <tr>
+                    <td>Охрана труда и пожарная безопасность</td>
+                    <td>от 2500</td>
+                </tr>
+                <tr>
+                    <td>Поиск и трудоустройство инвалида, чел</td>
+                    <td>100% оклада</td>
+                </tr>
+                <tr>
+                    <td>Консультирование, час</td>
+                    <td>250</td>
+                </tr>
+                <tr>
+                    <td>Обучение персонала, час</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td>Комплексное ведение кадрового учета, мес</td>
+                    <td>от 2500</td>
+                </tr>
+            </tbody>
+        </table>
 
-                </tbody>
-            </table>
+    </div> <!-- /widget-content -->
 
-        </div> <!-- /widget-content -->
-
-    </div> <!-- /widget -->
+</div> <!-- /widget -->
 </div>
 <div class=" blog-bottom">
     <p  class=" blog-bottom-p">Мне нужны услуги кадровика  </p>
@@ -421,68 +585,77 @@
     <div class="widget stacked widget-table action-table">
         <div class="widget-content">
             <table class="table table-striped table-responsive">
-                <tbody>
-                    <tr>
-                        <td class="header-td">Head 1</td>
-                        <td class="header-td">Head 2</td>
-                        <td class="header-td">Head 3</td>
-                        <td class="header-td"></td>
-                    </tr>
-                    <tr>
-                        <td>Head 1</td>
-                        <td>Head 2</td>
-                        <td>Head 3</td>
-                        <td class="td-actions">
-                            <div class="checkbox checkbox-danger">
-                                <input id="checkbox38" type="checkbox" checked="">
-                                <label for="checkbox38">
-                                </label>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Head 4</td>
-                        <td>Head 5</td>
-                        <td>Head 6</td>
-                        <td class="td-actions">
-                            <div class="checkbox checkbox-danger">
-                                <input id="checkbox39" type="checkbox" >
-                                <label for="checkbox39">
-                                </label>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Head 7</td>
-                        <td>Head 8</td>
-                        <td>Head 9</td>
-                        <td class="td-actions">
-                            <div class="checkbox checkbox-danger">
-                                <input id="checkbox31" type="checkbox" >
-                                <label for="checkbox31">
-                                </label>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Head 10</td>
-                        <td>Head 11</td>
-                        <td>Head 12</td>
-                        <td class="td-actions">
-                            <div class="checkbox checkbox-danger">
-                                <input id="checkbox32" type="checkbox" >
-                                <label for="checkbox32">
-                                </label>
-                            </div>
-                        </td>
-                    </tr>
+             <tbody>
+                <tr>
+                    <td class="header-td">Наименование услуги</td>
+                    <td class="header-td">Стоимость, грн</td>
+                </tr>
+                <tr>
+                    <td>Консультирование (кроме судовых вопросов), час</td>
+                    <td>250</td>
+                </tr>
+                <tr>
+                    <td>Анализ документации, 1стр</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>Составление типового договора без индивидуальных корректировок (аренда, покупка-продажа, поставка, подряд), шт</td>
+                    <td>от 500</td>
+                </tr>
+                <tr>
+                    <td>Составление типового договора с индивидуальными корректировками (аренда, покупка-продажа, поставка, подряд), шт</td>
+                    <td>от 700</td>
+                </tr>
+                <tr>
+                    <td>Составление индивидуального договора, шт</td>
+                    <td>от 1000</td>
+                </tr>
+                <tr>
+                    <td>Анализ договора на соответствие действующему законодательству, шт</td>
+                    <td>от 500</td>
+                </tr>
+                <tr>
+                    <td>Анализ договора на соответствие действующему законодательству, шт</td>
+                    <td>от 500</td>
+                </tr>
+                <tr>
+                    <td>Составление внешнеэкономического договора, шт</td>
+                    <td>от 1500</td>
+                </tr>
+                <tr>
+                    <td>Участие в переговорах, 1 час</td>
+                    <td>500</td>
+                </tr>
+                <tr>
+                    <td>Разработка внутренних нормативных документов, шт</td>
+                    <td>250</td>
+                </tr>
+                <tr>
+                    <td>Подготовка документов для официальной переписки (письмо, ответ на письмо), шт </td>
+                    <td>250</td>
+                </tr>
+                <tr>
+                    <td>Подготовка претензии, шт</td>
+                    <td>от 1000</td>
+                </tr>
+                <tr>
+                    <td>Расчет пени, шт</td>
+                    <td>договорная </td>
+                </tr>
+                <tr>
+                    <td>Судовые вопросы</td>
+                    <td>договорная </td>
+                </tr>
+                <tr>
+                    <td>Комплексное юридическое обслуживание, мес</td>
+                    <td>от 5000</td>
+                </tr>
+            </tbody>
+        </table>
 
-                </tbody>
-            </table>
+    </div> <!-- /widget-content -->
 
-        </div> <!-- /widget-content -->
-
-    </div> <!-- /widget -->
+</div> <!-- /widget -->
 </div>
 <div class=" blog-bottom">
     <p  class=" blog-bottom-p"> Мне нужны услуги Юриста</p>
@@ -522,68 +695,54 @@
     <div class="widget stacked widget-table action-table">
         <div class="widget-content">
             <table class="table table-striped table-responsive">
-                <tbody>
-                    <tr>
-                        <td class="header-td">Head 1</td>
-                        <td class="header-td">Head 2</td>
-                        <td class="header-td">Head 3</td>
-                        <td class="header-td"></td>
-                    </tr>
-                    <tr>
-                        <td>Head 1</td>
-                        <td>Head 2</td>
-                        <td>Head 3</td>
-                        <td class="td-actions">
-                            <div class="checkbox checkbox-danger">
-                                <input id="checkbox48" type="checkbox" checked="">
-                                <label for="checkbox48">
-                                </label>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Head 4</td>
-                        <td>Head 5</td>
-                        <td>Head 6</td>
-                        <td class="td-actions">
-                            <div class="checkbox checkbox-danger">
-                                <input id="checkbox49" type="checkbox" >
-                                <label for="checkbox49">
-                                </label>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Head 7</td>
-                        <td>Head 8</td>
-                        <td>Head 9</td>
-                        <td class="td-actions">
-                            <div class="checkbox checkbox-danger">
-                                <input id="checkbox41" type="checkbox" >
-                                <label for="checkbox41">
-                                </label>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Head 10</td>
-                        <td>Head 11</td>
-                        <td>Head 12</td>
-                        <td class="td-actions">
-                            <div class="checkbox checkbox-danger">
-                                <input id="checkbox42" type="checkbox" >
-                                <label for="checkbox42">
-                                </label>
-                            </div>
-                        </td>
-                    </tr>
+             <tbody>
+                <tr>
+                    <td class="header-td">Наименование услуги</td>
+                    <td class="header-td">Стоимость, грн</td>
+                </tr>
+                <tr>
+                    <td>Написание ТЗ для индивидуальных доработок в 1С, час </td>
+                    <td>250</td>
+                </tr>
+                <tr>
+                    <td>Услуги программиста 1С (удаленно), час</td>
+                    <td>500</td>
+                </tr>
+                <tr>
+                    <td>Услуги программиста 1С (с выездом), час</td>
+                    <td>600</td>
+                </tr>
+                <tr>
+                    <td>Услуги системного администратора (удаленно), час</td>
+                    <td>250</td>
+                </tr>
+                <tr>
+                    <td>Услуги системного администратора (с выездом), час</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td>Обучение персонала, час</td>
+                    <td>250</td>
+                </tr>
+                <tr>
+                    <td>Создание сайтов и лендингов</td>
+                    <td>договорная</td>
+                </tr>
+                <tr>
+                    <td>Консультирование, час </td>
+                    <td>250</td>
+                </tr>
+                <tr>
+                    <td>Комплексное обслуживание сетей и оргтехники, мес</td>
+                    <td>от 2500</td>
+                </tr>
 
-                </tbody>
-            </table>
+            </tbody>
+        </table>
 
-        </div> <!-- /widget-content -->
+    </div> <!-- /widget-content -->
 
-    </div> <!-- /widget -->
+</div> <!-- /widget -->
 </div>
 <div class=" blog-bottom">
     <p  class=" blog-bottom-p"> Мне нужны услуги программиста или системного администратора </p>
@@ -598,7 +757,42 @@
 <div class="scrollup">
     &uarr;
 </div>
+<div class="modal fade" id="squarespaceModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="lineModalLabel">Остаьвьте заявку и мы свяжемся с вами в ближайшее время</h4>
+    </div>
+    <div class="modal-body">
 
+        <!-- content goes here -->
+        <form name="feedback"  method="post">
+          <input type="hidden" name="project_name" value="Партнерство украина">
+          <input type="hidden" name="admin_email" value="info@partnership.kyiv.com">
+          <input type="hidden" name="form_subject" value="Заявка с главной">
+          <!-- основное содержимое (тело) модального окна -->
+          <div class="form-group">
+            <input type="text"  class="form-control" id="name" name="Имя" placeholder="Ваше имя" required>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" id="email" name="е-mail" placeholder="Ваш е-mail" required>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" id="phone" name="Номер телефона" placeholder="Ваш номер телефона" required>
+        </div>
+        <div class="form-group">
+            <textarea name="Сообщение" class="form-control" id="mess" cols="30" rows="10" placeholder="Сообщение" style="resize: none;"></textarea>
+        </div>
+        <button class="btn btn-model"  type="button"  data-dismiss="modal">Оставить заявку</button>
+    </form>
+
+</div>
+
+</div>
+</div>
+</div>
+</div>
 </div>
 <div class="ua jqueryOptions">
     <header>
@@ -652,7 +846,6 @@
                     <li><a href="#">Головна</a></li>
                     <li><a href="page4.html">Послуги та ціни</a></li>
                     <li><a href="page.html">Наша команда</a></li>
-                    <li><a href="page3.html">Блог</a></li>
                     <li><a href="page2.html">Контакти</a></li>
                 </ul>
             </div>
@@ -698,60 +891,197 @@
             <table class="table table-striped table-responsive">
                 <tbody>
                     <tr>
-                        <td class="header-td">Head 1</td>
-                        <td class="header-td">Head 2</td>
-                        <td class="header-td">Head 3</td>
-                        <td class="header-td"></td>
+                        <td class="header-td">Найменування послуги</td>
+                        <td class="header-td">без операцій</td>
+                        <td class="header-td">до 100 операцій на місяць</td>
+                        <td class="header-td">до 250 операцій на місяць</td>
+                        <td class="header-td">до 500 операцій на місяць</td>
+                        <td class="header-td">за кожну операцію понад тариф</td>
                     </tr>
                     <tr>
-                        <td>Head 1</td>
-                        <td>Head 2</td>
-                        <td>Head 3</td>
-                        <td class="td-actions">
-                            <div class="checkbox checkbox-danger">
-                                <input id="checkbox6" type="checkbox" >
-                                <label for="checkbox6">
-                                </label>
-                            </div>
-                        </td>
+                        <td>Загальна система оподаткування без ПДВ</td>
+                        <td>2500</td>
+                        <td>3500</td>
+                        <td>4500</td>
+                        <td>6000</td>
+                        <td>35</td>
                     </tr>
                     <tr>
-                        <td>Head 4</td>
-                        <td>Head 5</td>
-                        <td>Head 6</td>
-                        <td class="td-actions">
-                            <div class="checkbox checkbox-danger">
-                                <input id="checkbox7" type="checkbox" >
-                                <label for="checkbox7">
-                                </label>
-                            </div>
-                        </td>
+                        <td>Загальна система оподаткування з ПДВ</td>
+                        <td>3000</td>
+                        <td>4000</td>
+                        <td>5000</td>
+                        <td>7500</td>
+                        <td>50</td>
                     </tr>
                     <tr>
-                        <td>Head 7</td>
-                        <td>Head 8</td>
-                        <td>Head 9</td>
-                        <td class="td-actions">
-                            <div class="checkbox checkbox-danger">
-                                <input id="checkbox8" type="checkbox" >
-                                <label for="checkbox8">
-                                </label>
-                            </div>
-                        </td>
+                        <td>Спрощена система оподаткування без ПДВ</td>
+                        <td>2000</td>
+                        <td>2500</td>
+                        <td>3500</td>
+                        <td>5000</td>
+                        <td>35</td>
                     </tr>
                     <tr>
-                        <td>Head 10</td>
-                        <td>Head 11</td>
-                        <td>Head 12</td>
-                        <td class="td-actions">
-                            <div class="checkbox checkbox-danger">
-                                <input id="checkbox9" type="checkbox" >
-                                <label for="checkbox9">
-                                </label>
-                            </div>
-                        </td>
+                        <td>Спрощена система оподаткування з ПДВ</td>
+                        <td>2500</td>
+                        <td>3500</td>
+                        <td>4500</td>
+                        <td>6000</td>
+                        <td>50</td>
                     </tr>
-
+                    <tr>
+                        <td>Спрощена система оподаткування 1,2 група</td>
+                        <td>500</td>
+                        <td>1500</td>
+                        <td>2500</td>
+                        <td>5000</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>Спрощена система опопдаткування 3 група без ПДВ</td>
+                        <td>1000</td>
+                        <td>2500</td>
+                        <td>3500 </td>
+                        <td>4500</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>Спрощена система оподаткування 3 група з ПДВ</td>
+                        <td>2500</td>
+                        <td>3500</td>
+                        <td>4500</td>
+                        <td>6000</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Загальна система оподаткування без ПДВ</td>
+                        <td>2500</td>
+                        <td>3500</td>
+                        <td>4500</td>
+                        <td>6000</td>
+                        <td>35</td>
+                    </tr>
+                    <tr>
+                        <td>Загальна система оподаткування з ПДВ</td>
+                        <td>3000</td>
+                        <td>4000</td>
+                        <td>5000</td>
+                        <td>7500</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Облік заробітної плати та робочого часу</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Розрахунок нарахувань по листку непрацездатності (лікарняний)</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Розрахунок нарахувань відпустки </td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Розрахунок інших компенсаційних та заохочувальних виплат</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Консультування, год</td>
+                        <td>250</td>
+                        <td>250</td>
+                        <td>250</td>
+                        <td>250</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Розробка облікової політики підприємства, шт</td>
+                        <td>1000</td>
+                        <td>1000</td>
+                        <td>1000</td>
+                        <td>1000</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Навчання персоналу, год</td>
+                        <td>300</td>
+                        <td>300</td>
+                        <td>300</td>
+                        <td>300</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Розробка посадової інструкції співробітникам, шт</td>
+                        <td>250</td>
+                        <td>250</td>
+                        <td>250</td>
+                        <td>250</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Створення нової облікової бази в 1С, шт</td>
+                        <td>500</td>
+                        <td>500</td>
+                        <td>500</td>
+                        <td>500</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Відправка платежів ч/з клієнт-банк, шт</td>
+                        <td>35</td>
+                        <td>35</td>
+                        <td>35</td>
+                        <td>35</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Підготовка документів для отримання електронного цифрового підпису, пакет</td>
+                        <td>500</td>
+                        <td>500</td>
+                        <td>500</td>
+                        <td>500</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Підготовка документів для кредитування пакет</td>
+                        <td>від 1000</td>
+                        <td>від 1000</td>
+                        <td>від 1000</td>
+                        <td>від 1000</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Підготовка документів для перевірки, пакет</td>
+                        <td>від 1000</td>
+                        <td>від 1000</td>
+                        <td>від 1000</td>
+                        <td>від 1000</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Підготовка документів для бюджетного відшкодування ПДВ (одноразово), пакет</td>
+                        <td>від 3000</td>
+                        <td>від 3000</td>
+                        <td>від 3000</td>
+                        <td>від 3000</td>
+                        <td></td>
+                    </tr>
                 </tbody>
             </table>
 
@@ -761,7 +1091,7 @@
 </div>
 <div class=" blog-bottom">
     <p  class=" blog-bottom-p"> Мне нужны услуги бухгалтера </p>
-    <a class="btn btn-header2" data-toggle="modal" data-target="#squarespaceModal">Отправить заявку</a>
+    <a class="btn btn-header2" data-toggle="modal" data-target="#squarespaceModalUa">Надіслати заявку</a>
 </div>
 <p class="service-h">Фінансовий та управлінський облік </p>
 <ul class="service-ul">
@@ -798,95 +1128,108 @@
             <table class="table table-striped table-responsive">
                 <tbody>
                     <tr>
-                        <td class="header-td">Head 1</td>
-                        <td class="header-td">Head 2</td>
-                        <td class="header-td">Head 3</td>
-                        <td class="header-td"></td>
+                        <td class="header-td">Найменування послуги</td>
+                        <td class="header-td">Вартість, грн</td>
                     </tr>
                     <tr>
-                        <td>Head 1</td>
-                        <td>Head 2</td>
-                        <td>Head 3</td>
-                        <td class="td-actions">
-                            <div class="checkbox checkbox-danger">
-                                <input id="checkbox11" type="checkbox" checked="">
-                                <label for="checkbox11">
-                                </label>
-                            </div>
-                        </td>
+                        <td>Фінансова модель для Start-up (excel з формулами)</td>
+                        <td >2500</td>
                     </tr>
                     <tr>
-                        <td>Head 4</td>
-                        <td>Head 5</td>
-                        <td>Head 6</td>
-                        <td class="td-actions">
-                            <div class="checkbox checkbox-danger">
-                                <input id="checkbox12" type="checkbox" >
-                                <label for="checkbox12">
-                                </label>
-                            </div>
-                        </td>
+                        <td>Оцінка ефективності інвестицій</td>
+                        <td>1000</td>
                     </tr>
                     <tr>
-                        <td>Head 7</td>
-                        <td>Head 8</td>
-                        <td>Head 9</td>
-                        <td class="td-actions">
-                            <div class="checkbox checkbox-danger">
-                                <input id="checkbox13" type="checkbox" >
-                                <label for="checkbox13">
-                                </label>
-                            </div>
-                        </td>
+                        <td>Карта ризиків підприємства</td>
+                        <td>від 500</td>
                     </tr>
                     <tr>
-                        <td>Head 10</td>
-                        <td>Head 11</td>
-                        <td>Head 12</td>
-                        <td class="td-actions">
-                            <div class="checkbox checkbox-danger">
-                                <input id="checkbox14" type="checkbox" >
-                                <label for="checkbox14">
-                                </label>
-                            </div>
-                        </td>
+                        <td>SWOT аналіз підприємства</td>
+                        <td>500</td>
                     </tr>
+                    <tr>
+                        <td>Бізнес-план (word)</td>
+                        <td>від 1000</td>
+                    </tr>
+                    <tr>
+                        <td>Презентацій проекту, направлення, продукту і тд (pptx, pdf), 1стр</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>Облікова політика (управлінський облік)</td>
+                        <td>1000</td>
+                    </tr>
+                    <tr>
+                        <td>Розробка та впровадження управлінського обліку</td>
+                        <td>від 2500</td>
+                    </tr>
+                    <tr>
+                        <td>Розробка та впровадження систем бюджетування</td>
+                        <td>від 2500</td>
+                    </tr>
+                    <tr>
+                        <td>Фінансова звітність (P&L, CashFlow, BalanceSheet)</td>
+                        <td>від 1000</td>
+                    </tr>
+                    <tr>
+                        <td>Автоматизація обліку та звітності, год</td>
+                        <td>250</td>
+                    </tr>
+                    <tr>
+                        <td>Консультування, год</td>
+                        <td>250</td>
+                    </tr>
+                    <tr>
+                        <td>Навчання персоналу, год</td>
+                        <td>300</td>
+                    </tr>
+                    <tr>
+                        <td>Реєстрація та використання підприємств іноземних юрисдикцій</td>
+                        <td>договірна</td>
+                    </tr>
+                    <tr>
+                        <td>Робота з іноземними банками та платіжними системами</td>
+                        <td>договірна</td>
+                    </tr>
+                    <tr>
+                        <td>Комплексне ведення управлінського та фінансового обліку, міс</td>
+                        <td>від 5000</td>
 
-                </tbody>
-            </table>
+                    </tbody>
+                </table>
 
-        </div> <!-- /widget-content -->
+            </div> <!-- /widget-content -->
 
-    </div> <!-- /widget -->
-</div>
-<div class=" blog-bottom">
-    <p  class=" blog-bottom-p"> Мені потрібні послуги фінансиста</p>
-    <a class="btn btn-header2" data-toggle="modal" data-target="#squarespaceModalUA">Надіслати заявку</a>
-</div>
+        </div> <!-- /widget -->
+    </div>
+    <div class=" blog-bottom">
+        <p  class=" blog-bottom-p"> Мені потрібні послуги фінансиста</p>
+        <a class="btn btn-header2" data-toggle="modal" data-target="#squarespaceModalUa">Надіслати заявку</a>
+    </div>
 
-<p class="service-h">Кадрове діловодство й добір персоналу</p>
-<ul class="service-ul">
+    <p class="service-h">Кадрове діловодство й добір персоналу</p>
+    <ul class="service-ul">
+        <li>
+            <span>
+             Пошук, добір та оцінювання персоналу. 
+         </span>
+     </li>
+     <li>
+        <span>
+            Складання штатного розпису, ведення обліку робочого часу. 
+        </span>
+    </li>
     <li>
         <span>
-         Пошук, добір та оцінювання персоналу. 
-     </span>
- </li>
- <li>
-    <span>
-        Складання штатного розпису, ведення обліку робочого часу. 
-    </span>
-</li>
-<li>
-    <span>
-        Облік трудових книжок.
-    </span>
-</li>
-<li>
-    <span>
-       Складання посадових інструкцій, положень про відділи, іншої регламентувальної документації. 
-   </span>
-</li>
-<li>
+            Облік трудових книжок.
+        </span>
+    </li>
+    <li>
+        <span>
+           Складання посадових інструкцій, положень про відділи, іншої регламентувальної документації. 
+       </span>
+   </li>
+   <li>
     <span>
         Аудит кадрових документів минулих періодів та їх синхронізація з бухгалтерським обліком. 
     </span>
@@ -898,71 +1241,82 @@
         <div class="widget-content">
             <table class="table table-striped table-responsive">
                 <tbody>
-                    <tr>
-                        <td class="header-td">Head 1</td>
-                        <td class="header-td">Head 2</td>
-                        <td class="header-td">Head 3</td>
-                        <td class="header-td"></td>
-                    </tr>
-                    <tr>
-                        <td>Head 1</td>
-                        <td>Head 2</td>
-                        <td>Head 3</td>
-                        <td class="td-actions">
-                            <div class="checkbox checkbox-danger">
-                                <input id="checkbox18" type="checkbox" checked="">
-                                <label for="checkbox18">
-                                </label>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Head 4</td>
-                        <td>Head 5</td>
-                        <td>Head 6</td>
-                        <td class="td-actions">
-                            <div class="checkbox checkbox-danger">
-                                <input id="checkbox19" type="checkbox" >
-                                <label for="checkbox19">
-                                </label>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Head 7</td>
-                        <td>Head 8</td>
-                        <td>Head 9</td>
-                        <td class="td-actions">
-                            <div class="checkbox checkbox-danger">
-                                <input id="checkbox21" type="checkbox" >
-                                <label for="checkbox21">
-                                </label>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Head 10</td>
-                        <td>Head 11</td>
-                        <td>Head 12</td>
-                        <td class="td-actions">
-                            <div class="checkbox checkbox-danger">
-                                <input id="checkbox22" type="checkbox" >
-                                <label for="checkbox22">
-                                </label>
-                            </div>
-                        </td>
-                    </tr>
+                 <tr>
+                    <td class="header-td">Найменування послуги</td>
+                    <td class="header-td">Вартість, грн</td>
+                </tr>
+                <tr>
+                    <td>Штатний розпис, шт</td>
+                    <td >250</td>
+                </tr>
+                <tr>
+                    <td>Прийом на роботу, 1 ос</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>Звільнення, 1 ос</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>Переведення, 1 ос</td>
+                    <td>100</td>
 
-                </tbody>
-            </table>
+                </tr>
+                <tr>
+                    <td>Внутрішні накази та розпорядження, шт</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>Внутрішні нормативні документи (внутрішній розпорядок, колективний договір, ін)</td>
+                    <td>250</td>
+                </tr>
+                <tr>
+                    <td>Формування особової справи, 1 ос</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>Облік та заповнення трудових книг</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>Пошук, підбір та оцінка персоналу, 1 ос</td>
+                    <td>50% оклада</td>
+                </tr>
+                <tr>
+                    <td>Розробка посадової інструкції, шт</td>
+                    <td>250</td>
+                </tr>
+                <tr>
+                    <td>Охорона праці та пожежна безпека</td>
+                    <td>від 2500</td>
+                </tr>
 
-        </div> <!-- /widget-content -->
+                <tr>
+                    <td>Пошук та працевлаштування інваліда, 1 ос</td>
+                    <td>100% оклада </td>
+                </tr>
+                <tr>
+                    <td>Консультування, год</td>
+                    <td>250</td>
+                </tr>
+                <tr>
+                    <td>Навчання персоналу, год</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td>Комплексне ведення кадрового обліку, міс</td>
+                    <td>від 2500</td>
+                </tr>
+            </tbody>
+        </table>
 
-    </div> <!-- /widget -->
+    </div> <!-- /widget-content -->
+
+</div> <!-- /widget -->
 </div>
 <div class=" blog-bottom">
     <p  class=" blog-bottom-p">Мені потрібні послуги кадровика  </p>
-    <a class="btn btn-header2" data-toggle="modal" data-target="#squarespaceModalUA">Надіслати заявку</a>
+    <a class="btn btn-header2" data-toggle="modal" data-target="#squarespaceModalUa">Надіслати заявку</a>
 </div>
 <p class="service-h">Юридичний супровід </p>
 <ul class="service-ul">
@@ -999,60 +1353,61 @@
             <table class="table table-striped table-responsive">
                 <tbody>
                     <tr>
-                        <td class="header-td">Head 1</td>
-                        <td class="header-td">Head 2</td>
-                        <td class="header-td">Head 3</td>
-                        <td class="header-td"></td>
+                        <td class="header-td">Найменування послуги</td>
+                        <td class="header-td">Вартість, грн</td>
                     </tr>
                     <tr>
-                        <td>Head 1</td>
-                        <td>Head 2</td>
-                        <td>Head 3</td>
-                        <td class="td-actions">
-                            <div class="checkbox checkbox-danger">
-                                <input id="checkbox38" type="checkbox" checked="">
-                                <label for="checkbox38">
-                                </label>
-                            </div>
-                        </td>
+                        <td>Консультування (окрім судових питань), год</td>
+                        <td>250</td>
                     </tr>
                     <tr>
-                        <td>Head 4</td>
-                        <td>Head 5</td>
-                        <td>Head 6</td>
-                        <td class="td-actions">
-                            <div class="checkbox checkbox-danger">
-                                <input id="checkbox39" type="checkbox" >
-                                <label for="checkbox39">
-                                </label>
-                            </div>
-                        </td>
+                        <td>Аналіз документації, 1 стр</td>
+                        <td>100</td>
                     </tr>
                     <tr>
-                        <td>Head 7</td>
-                        <td>Head 8</td>
-                        <td>Head 9</td>
-                        <td class="td-actions">
-                            <div class="checkbox checkbox-danger">
-                                <input id="checkbox31" type="checkbox" >
-                                <label for="checkbox31">
-                                </label>
-                            </div>
-                        </td>
+                        <td>Складання типового договору з індивідуальними коригуваннями (оренда, купівля-продаж, поставка, підряд), шт</td>
+                        <td>від 700</td>
                     </tr>
                     <tr>
-                        <td>Head 10</td>
-                        <td>Head 11</td>
-                        <td>Head 12</td>
-                        <td class="td-actions">
-                            <div class="checkbox checkbox-danger">
-                                <input id="checkbox32" type="checkbox" >
-                                <label for="checkbox32">
-                                </label>
-                            </div>
-                        </td>
+                        <td>Складання індивідуального договору, шт</td>
+                        <td>від 1000</td>
                     </tr>
-
+                    <tr>
+                        <td>Аналіз договору на відповідність діючому законодавству, шт</td>
+                        <td>від 500</td>
+                    </tr>
+                    <tr>
+                        <td>Складання зовнішньоекономічного договору, шт</td>
+                        <td>від 1500</td>
+                    </tr>
+                    <tr>
+                        <td>Участь в перемовинах, год</td>
+                        <td>500</td>
+                    </tr>
+                    <tr>
+                        <td>Розробка внутрішніх нормативних документів, шт</td>
+                        <td>250</td>
+                    </tr>
+                    <tr>
+                        <td>Підготовка документів для офіційного листування (лист, відповідь на лист), шт </td>
+                        <td>250</td>
+                    </tr>
+                    <tr>
+                        <td>Підготовка претензій, шт</td>
+                        <td>від 1000</td>
+                    </tr>
+                    <tr>
+                        <td>Розрахунок пені, шт</td>
+                        <td>договірна</td>
+                    </tr>
+                    <tr>
+                        <td>Судові питання</td>
+                        <td>договірна</td>
+                    </tr>
+                    <tr>
+                        <td>Комплексне юридичне обслуговування, міс</td>
+                        <td>від 5000</td>
+                    </tr>
                 </tbody>
             </table>
 
@@ -1062,7 +1417,7 @@
 </div>
 <div class=" blog-bottom">
     <p  class=" blog-bottom-p"> Мені потрібні послуги юриста</p>
-    <a class="btn btn-header2" data-toggle="modal" data-target="#squarespaceModalUA">Надіслати заявку</a>
+    <a class="btn btn-header2" data-toggle="modal" data-target="#squarespaceModalUa">Надіслати заявку</a>
 </div>
 
 <p class="service-h">Автоматизація обліку й адміністрування комп’ютерних мереж </p>
@@ -1100,58 +1455,44 @@
             <table class="table table-striped table-responsive">
                 <tbody>
                     <tr>
-                        <td class="header-td">Head 1</td>
-                        <td class="header-td">Head 2</td>
-                        <td class="header-td">Head 3</td>
-                        <td class="header-td"></td>
+                        <td class="header-td">Найменування послуги</td>
+                        <td class="header-td">Вартість, грн</td>
                     </tr>
                     <tr>
-                        <td>Head 1</td>
-                        <td>Head 2</td>
-                        <td>Head 3</td>
-                        <td class="td-actions">
-                            <div class="checkbox checkbox-danger">
-                                <input id="checkbox48" type="checkbox" checked="">
-                                <label for="checkbox48">
-                                </label>
-                            </div>
-                        </td>
+                        <td>Написання ТЗ для індивідуальних доробок в 1С, год</td>
+                        <td>250</td>
                     </tr>
                     <tr>
-                        <td>Head 4</td>
-                        <td>Head 5</td>
-                        <td>Head 6</td>
-                        <td class="td-actions">
-                            <div class="checkbox checkbox-danger">
-                                <input id="checkbox49" type="checkbox" >
-                                <label for="checkbox49">
-                                </label>
-                            </div>
-                        </td>
+                        <td>Послуги програміста 1С (віддалено), год</td>
+                        <td>500</td>
                     </tr>
                     <tr>
-                        <td>Head 7</td>
-                        <td>Head 8</td>
-                        <td>Head 9</td>
-                        <td class="td-actions">
-                            <div class="checkbox checkbox-danger">
-                                <input id="checkbox41" type="checkbox" >
-                                <label for="checkbox41">
-                                </label>
-                            </div>
-                        </td>
+                        <td>Послуги програміста 1С (з виїздом), год</td>
+                        <td>600</td>
                     </tr>
                     <tr>
-                        <td>Head 10</td>
-                        <td>Head 11</td>
-                        <td>Head 12</td>
-                        <td class="td-actions">
-                            <div class="checkbox checkbox-danger">
-                                <input id="checkbox42" type="checkbox" >
-                                <label for="checkbox42">
-                                </label>
-                            </div>
-                        </td>
+                        <td>Послуги системного адміністратора (віддалено), год</td>
+                        <td>250</td>
+                    </tr>
+                    <tr>
+                        <td>Послуги системного адміністратора (з виїздом), год</td>
+                        <td>300</td>
+                    </tr>
+                    <tr>
+                        <td>Навчання персоналу, год</td>
+                        <td>250</td>
+                    </tr>
+                    <tr>
+                        <td>Створення сайтів та лендінгів</td>
+                        <td>договірна</td>
+                    </tr>
+                    <tr>
+                        <td>Консультування, год</td>
+                        <td>250</td>
+                    </tr>
+                    <tr>
+                        <td>Комплексне обслуговування мереж та оргтехніки, міс</td>
+                        <td>від 2500</td>
                     </tr>
 
                 </tbody>
@@ -1163,7 +1504,7 @@
 </div>
 <div class=" blog-bottom">
     <p  class=" blog-bottom-p">Мені потрібні послуги програміста або системного адміністратора</p>
-    <a class="btn btn-header2" data-toggle="modal" data-target="#squarespaceModalUA">Надіслати заявку</a>
+    <a class="btn btn-header2" data-toggle="modal" data-target="#squarespaceModalUa">Надіслати заявку</a>
 </div>
 
 
@@ -1175,6 +1516,40 @@
     &uarr;
 </div>
 <div class="modalUA fade" id="squarespaceModalUa" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="lineModalLabel">Залиште заявку і ми зв’яжемось з вами найближчим часом</h4>
+    </div>
+    <div class="modal-body">
+
+        <!-- content goes here -->
+        <form name="feedback"  method="post">
+          <input type="hidden" name="project_name" value="Партнерство украина">
+          <input type="hidden" name="admin_email" value="info@partnership.kyiv.com">
+          <input type="hidden" name="form_subject" value="Заявка с главной">
+          <!-- основное содержимое (тело) модального окна -->
+          <div class="form-group">
+            <input type="text"  class="form-control" id="name" name="Имя" placeholder="Ваше ім’я" required>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" id="email" name="е-mail" placeholder="Ваш е-mail" required>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" id="phone" name="Номер телефона" placeholder="Ваш номер телефону" required>
+        </div>
+        <div class="form-group">
+            <textarea name="Сообщение" class="form-control" id="mess" cols="30" rows="10" placeholder="Повідомлення" style="resize: none;"></textarea>
+        </div>
+        <button class="btn btn-model"  type="button"  data-dismiss="modal">Залишити заявку</button>
+    </form>
+
+</div>
+
+</div>
+</div>
+</div>
 
 </div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
