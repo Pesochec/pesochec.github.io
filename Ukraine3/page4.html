@@ -34,90 +34,107 @@
         <header>
             <div class="container">
                 <div class="header-top">
-                    <img src="img/logo.png" alt="logo" class="logo">
-                    <div class="block-header-top-a">
-                      <a href="https://www.facebook.com/PartnershipUkraine/" class="header-top-a">
-                        <img src="img/soch1.png" alt="/" class="soch">
-                    </a>
-                    <a href="#" class="header-top-a">
-                        <img src="img/soch2.png" alt="/" class="soch">
-                    </a>
-                    <a href="skype:live:partner40486060?chat" class="header-top-a">
-                        <img src="img/soch3.png" alt="/" class="soch">
-                    </a>
-                    <a href="#" class="header-top-a">
-                        <img src="img/soch4.png" alt="/" class="soch">
-                    </a>
-                    <a href="#" class="header-top-a">
-                        <img src="img/soch5.png" alt="/" class="soch">
-                    </a>
-                    <a class="header-top-a" href="#">
-                        <img src="img/soch6.png" alt="/" class="soch">
-                    </a>
-                </div>
-                <img src="img/soch7.png" alt="/" class="soch2">
-                <select  name="choose" id="choose" class="js-example-basic-hide-search input-select" >
-                  <option class="ru" value="ru" >RU</option>
-                  <option  class="ua" value="ua">UA</option>
-              </select>
-              <div class="header-top-p">
+                 <a href="index.html">
+                  <img src="img/logo.png" alt="logo" class="logo">
+              </a>
+              <div class="block-header-top-a">
+                  <a href="https://www.facebook.com/PartnershipUkraine/" class="header-top-a">
+                    <img src="img/soch1.png" alt="/" class="soch">
+                </a>
+                <a href="https://www.linkedin.com/company/partnerstvoukraine/" target="_blank" class="header-top-a">
+                    <img src="img/soch2.png" alt="/" class="soch">
+                </a>
+                <a href="skype:live:partner40486060?chat" class="header-top-a">
+                    <img src="img/soch3.png" alt="/" class="soch">
+                </a>
+                <a href="#" class="header-top-a" data-toggle="modal" data-target="#telegramm">
+                    <img src="img/soch4.png" alt="/" class="soch">
+                </a>
+                <a href="#" class="header-top-a" data-toggle="modal" data-target="#telegramm">
+                    <img src="img/soch5.png" alt="/" class="soch">
+                </a>
+                <a class="header-top-a" href="#" data-toggle="modal" data-target="#telegramm">
+                    <img src="img/soch6.png" alt="/" class="soch">
+                </a>
+            </div>
+            <img src="img/soch7.png" alt="/" class="soch2">
+
+            <select  name="choose" id="choose2" class="js-example-basic-hide-search input-select" onchange="top.location=this.value">
+              <option class="ru2" value="page4.html" selected>RU</option>
+              <option  class="ua2" value="ua/page4.html" >UA</option>
+
+
+
+          </select>
+          <div class="header-top-p">
+              <a href="mailto:info@partnership.kyiv.ua" style="color: initial">
                 <img src="img/mail.png" class="" alt="/">
-                info@partnership.kyiv.com
-            </div>
-            <div class="header-top-p">
-                <img src="img/phono.png" class="" alt="/">
-                + 38 096 6000 300
-            </div>
+                info@partnership.kyiv.ua
+            </a>
+        </div>
+
+        <div class="header-top-p">
+            <img src="img/phono.png" class="" alt="/">
+            + 38 096 6000 300
         </div>
     </div>
-    <nav class="navbar navbar2  navbar-fixed-top navbar-top navbar-static">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <img src="img/buter.png" alt="/" class="buter">
-                </button>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="index.html">Главная</a></li>
-                    <li><a href="page4.html">Услуги и цены</a></li>
-                    <li><a href="page.html">Наша команда</a></li>
-                    <li><a href="page2.html">Контакты</a></li>
-                </ul>
-
-            </div>
+</div>
+<nav class="navbar navbar2  navbar-fixed-top navbar-top navbar-static">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <img src="img/buter.png" alt="/" class="buter">
+            </button>
         </div>
-    </nav>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="page4.html">Услуги и цены</a>
+                    <ul class="submenu">
+                      <li><a href="page4.html#1">Бухгалтерия </a></li>
+                      <li><a href="page4.html#2">Финансовый отдел </a></li>
+                      <li><a href="page4.html#3">Отдел кадров </a></li>
+                      <li><a href="page4.html#4">Юридический отдел </a></li>
+                      <li><a href="page4.html#5">IT-отдел </a></li>
+                  </ul>
+              </li>
+              <li><a href="page.html">Наша команда</a></li>
+              <li><a href="page2.html">Контакты</a></li>
+          </ul>
+
+      </div>
+  </div>
+</nav>
 </header>
 <div class="pages4-h"></div>
 
 <div class="container service">
-  <p class="service-h">Бухгалтерский и налоговый учет</p>
+  <p class="service-h" id="1">Бухгалтерский и налоговый учет</p>
   <ul class="service-ul">
     <li>
         <span>
-           Помощь в выборе системы налогообложения и программного обеспечения.
-       </span>
-   </li>
-   <li>
+         Помощь в выборе системы налогообложения и программного обеспечения.
+     </span>
+ </li>
+ <li>
     <span>
-       Составление учетной политики.
-   </span>
+     Составление учетной политики.
+ </span>
 </li>
 <li>
     <span>
-       Комплексное ведение бухгалтерского и налогового учета.
-   </span>
+     Комплексное ведение бухгалтерского и налогового учета.
+ </span>
 </li>
 <li>
     <span>
-       Обработка первичной документации.
-   </span>
+     Обработка первичной документации.
+ </span>
 </li>
 <li>
     <span>
-       Сдача отчетов в контролирующие органы.
-   </span>
+     Сдача отчетов в контролирующие органы.
+ </span>
 </li>
 </ul>
 
@@ -130,7 +147,7 @@
                 <tbody>
                     <tr>
                         <td class="header-td">Наименование услуги</td>
-                        <td class="header-td">без операций</td>
+                        <td class="header-td">без операций, грн</td>
                         <td class="header-td">до 100 операций в мес, грн</td>
                         <td class="header-td">до 250 операций в мес, грн</td>
                         <td class="header-td">до 500 операций в мес, грн</td>
@@ -138,11 +155,11 @@
                     </tr>
                     <tr>
                         <td class="header-td" style="width: 100%;" width="90%">Комплексное бухгалтерское обслуживание юридического лица (без учета заработной платы):</td>
-                        <td class="header-td">-</td>
-                        <td class="header-td">-</td>
-                        <td class="header-td">-</td>
-                        <td class="header-td">-</td>
-                        <td class="header-td">-</td>
+                        <td class="header-td"></td>
+                        <td class="header-td"></td>
+                        <td class="header-td"></td>
+                        <td class="header-td"></td>
+                        <td class="header-td"></td>
                     </tr>
                     <tr>
                         <td>Общая система налогообложения без НДС</td>
@@ -179,11 +196,11 @@
 
                     <tr>
                         <td class="header-td" style="width: 100%;" width="90%"> Комплексное бухгалтерское обслуживание физического лица - предпринимателя (без учета заработной платы):</td>
-                        <td class="header-td">-</td>
-                        <td class="header-td">-</td>
-                        <td class="header-td">-</td>
-                        <td class="header-td">-</td>
-                        <td class="header-td">-</td>
+                        <td class="header-td"></td>
+                        <td class="header-td"></td>
+                        <td class="header-td"></td>
+                        <td class="header-td"></td>
+                        <td class="header-td"></td>
                     </tr>
                     <tr>
                         <td>Упрощенная система налогообложения 1,2 группа</td>
@@ -227,11 +244,11 @@
                     </tr>
                     <tr>
                         <td class="header-td" style="width: 100%;" width="90%">Учет взаиморасчетов с сотрудниками (за 1 сотрудника):</td>
-                        <td class="header-td">-</td>
-                        <td class="header-td">-</td>
-                        <td class="header-td">-</td>
-                        <td class="header-td">-</td>
-                        <td class="header-td">-</td>
+                        <td class="header-td"></td>
+                        <td class="header-td"></td>
+                        <td class="header-td"></td>
+                        <td class="header-td"></td>
+                        <td class="header-td"></td>
                     </tr>
                     <tr>
                         <td>Учет заработной платы и рабочего времени </td>
@@ -267,11 +284,11 @@
                     </tr>
                     <tr>
                         <td class="header-td" style="width: 100%;" width="90%">             Разовые и дополнительные услуги:</td>
-                        <td class="header-td">-</td>
-                        <td class="header-td">-</td>
-                        <td class="header-td">-</td>
-                        <td class="header-td">-</td>
-                        <td class="header-td">-</td>
+                        <td class="header-td"></td>
+                        <td class="header-td"></td>
+                        <td class="header-td"></td>
+                        <td class="header-td"></td>
+                        <td class="header-td"></td>
                     </tr>
 
                     <tr>
@@ -366,7 +383,7 @@
     <p  class=" blog-bottom-p"> Мне нужны услуги бухгалтера </p>
     <a class="btn btn-header2" data-toggle="modal" data-target="#squarespaceModal">Отправить заявку</a>
 </div>
-<p class="service-h">Финансовый и управленческий учет</p>
+<p class="service-h" id="2">Финансовый и управленческий учет</p>
 <ul class="service-ul">
     <li>
         <span>
@@ -375,13 +392,13 @@
     </li>
     <li>
         <span>
-         Бюджетирование и факторный анализ.
-     </span>
- </li>
- <li>
+           Бюджетирование и факторный анализ.
+       </span>
+   </li>
+   <li>
     <span>
-     Составление финансовой отчетности и анализ показателей деятельности.
- </span>
+       Составление финансовой отчетности и анализ показателей деятельности.
+   </span>
 </li>
 <li>
     <span>
@@ -390,8 +407,8 @@
 </li>
 <li>
     <span>
-     Автоматизация учета, консолидация направлений бизнеса.
- </span>
+       Автоматизация учета, консолидация направлений бизнеса.
+   </span>
 </li>
 </ul>
 
@@ -399,7 +416,7 @@
     <div class="widget stacked widget-table action-table">
         <div class="widget-content">
             <table class="table table-striped table-responsive">
-               <tbody>
+             <tbody>
                 <tr>
                     <td class="header-td">Наименование услуги</td>
                     <td class="header-td">Стоимость, грн</td>
@@ -480,14 +497,14 @@
 </div>
 
 
-<p class="service-h">Кадровое делопроизводство и  подбор персонала</p>
+<p class="service-h" id="3">Кадровое делопроизводство и  подбор персонала</p>
 <ul class="service-ul">
     <li>
         <span>
-         Поиск, подбор и оценка персонала.
-     </span>
- </li>
- <li>
+           Поиск, подбор и оценка персонала.
+       </span>
+   </li>
+   <li>
     <span>
         Составление штатного расписания, ведение учета рабочего времени.
     </span>
@@ -499,13 +516,13 @@
 </li>
 <li>
     <span>
-       Составление должностных инструкций, положений об отделах, прочей регламентирующей документации.
-   </span>
+     Составление должностных инструкций, положений об отделах, прочей регламентирующей документации.
+ </span>
 </li>
 <li>
     <span>
-     Аудит кадровых документов прошлых периодов и их синхронизация с бухгалтерским учетом.
- </span>
+       Аудит кадровых документов прошлых периодов и их синхронизация с бухгалтерским учетом.
+   </span>
 </li>
 </ul>
 
@@ -513,7 +530,7 @@
     <div class="widget stacked widget-table action-table">
         <div class="widget-content">
             <table class="table table-striped table-responsive">
-             <tbody>
+               <tbody>
                 <tr>
                     <td class="header-td">Наименование услуги</td>
                     <td class="header-td">Стоимость, грн</td>
@@ -589,14 +606,14 @@
     <p  class=" blog-bottom-p">Мне нужны услуги кадровика  </p>
     <a class="btn btn-header2" data-toggle="modal" data-target="#squarespaceModal">Отправить заявку</a>
 </div>
-<p class="service-h">Юридическое сопровождение</p>
+<p class="service-h" id="4">Юридическое сопровождение</p>
 <ul class="service-ul">
     <li>
         <span>
-         Консультации и помощь в организации бизнеса, изменении стратегии работы, выходе из кризисных ситуаций включая переговорную, претензионную и судебную практику.
-     </span>
- </li>
- <li>
+           Консультации и помощь в организации бизнеса, изменении стратегии работы, выходе из кризисных ситуаций включая переговорную, претензионную и судебную практику.
+       </span>
+   </li>
+   <li>
     <span>
         Составление и проверка документации (договоры, претензии, иски и т.д.).
     </span>
@@ -622,7 +639,7 @@
     <div class="widget stacked widget-table action-table">
         <div class="widget-content">
             <table class="table table-striped table-responsive">
-             <tbody>
+               <tbody>
                 <tr>
                     <td class="header-td">Наименование услуги</td>
                     <td class="header-td">Стоимость, грн</td>
@@ -699,7 +716,7 @@
     <a class="btn btn-header2" data-toggle="modal" data-target="#squarespaceModal">Отправить заявку</a>
 </div>
 
-<p class="service-h">Автоматизация учета и администрирование компьютерных сетей</p>
+<p class="service-h" id="5">Автоматизация учета и администрирование компьютерных сетей</p>
 <ul class="service-ul">
     <li>
         <span>
@@ -713,18 +730,18 @@
     </li>
     <li>
         <span>
-         Обеспечение бесперебойной работы IT-инфраструктуры
-     </span>
- </li>
- <li>
+           Обеспечение бесперебойной работы IT-инфраструктуры
+       </span>
+   </li>
+   <li>
     <span>
         Администрирование и наполнение сайтов.
     </span>
 </li>
 <li>
     <span>
-       Организация доступа удаленных сотрудников и подразделений.
-   </span>
+     Организация доступа удаленных сотрудников и подразделений.
+ </span>
 </li>
 </ul>
 
@@ -732,7 +749,7 @@
     <div class="widget stacked widget-table action-table">
         <div class="widget-content">
             <table class="table table-striped table-responsive">
-             <tbody>
+               <tbody>
                 <tr>
                     <td class="header-td">Наименование услуги</td>
                     <td class="header-td">Стоимость, грн</td>
@@ -804,9 +821,9 @@
     <div class="modal-body">
 
         <!-- content goes here -->
-        <form name="feedback"  method="post">
+        <form name="feedback"  method="post" action="">
           <input type="hidden" name="project_name" value="Партнерство украина">
-          <input type="hidden" name="admin_email" value="info@partnership.kyiv.com">
+          <input type="hidden" name="admin_email" value="info@partnership.kyiv.ua">
           <input type="hidden" name="form_subject" value="Заявка с главной">
           <!-- основное содержимое (тело) модального окна -->
           <div class="form-group">
@@ -815,13 +832,13 @@
         <div class="form-group">
             <input type="text" class="form-control" id="email" name="е-mail" placeholder="Ваш е-mail" required>
         </div>
-        <div class="form-group">
+        <div class="form-group" style="display: none;"> 
             <input type="text" class="form-control" id="phone" name="Номер телефона" placeholder="Ваш номер телефона" required>
         </div>
         <div class="form-group">
-            <textarea name="Сообщение" class="form-control" id="mess" cols="30" rows="10" placeholder="Сообщение" style="resize: none;"></textarea>
+            <textarea name="Сообщение" class="form-control" id="mess" cols="30" rows="2" placeholder="Сообщение" style="resize: none;"></textarea>
         </div>
-        <button class="btn btn-model"  type="button"  data-dismiss="modal">Оставить заявку</button>
+        <button class="btn btn-model"  >Отправить заявку</button>
     </form>
 
 </div>
@@ -830,835 +847,25 @@
 </div>
 </div>
 </div>
-</div>
-<div class="ua jqueryOptions">
-    <header>
-        <div class="container">
-            <div class="header-top">
-                <img src="img/logo.png" alt="logo" class="logo">
-                <div class="block-header-top-a">
-                  <a href="https://www.facebook.com/PartnershipUkraine/" class="header-top-a">
-                    <img src="img/soch1.png" alt="/" class="soch">
-                </a>
-                <a href="#" class="header-top-a">
-                    <img src="img/soch2.png" alt="/" class="soch">
-                </a>
-                <a href="skype:live:partner40486060?chat" class="header-top-a">
-                    <img src="img/soch3.png" alt="/" class="soch">
-                </a>
-                <a href="#" class="header-top-a">
-                    <img src="img/soch4.png" alt="/" class="soch">
-                </a>
-                <a href="#" class="header-top-a">
-                    <img src="img/soch5.png" alt="/" class="soch">
-                </a>
-                <a class="header-top-a" href="#">
-                    <img src="img/soch6.png" alt="/" class="soch">
-                </a>
-            </div>
-            <img src="img/soch7.png" alt="/" class="soch2">
-            <select  name="choose" id="choose2" class="js-example-basic-hide-search input-select" >
-                <option  class="ua2" value="ua">UA</option>
-                <option class="ru2" value="ru" >RU</option>
-            </select>
-            <div class="header-top-p">
-                <img src="img/mail.png" class="" alt="/">
-                info@partnership.kyiv.com
-            </div>
-            <div class="header-top-p">
-                <img src="img/phono.png" class="" alt="/">
-                + 38 096 6000 300
-            </div>
-        </div>
-    </div>
-    <nav class="navbar navbar2  navbar-fixed-top navbar-top navbar-static">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <img src="img/buter.png" alt="/" class="buter">
-                </button>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="#">Головна</a></li>
-                    <li><a href="page4.html">Послуги та ціни</a></li>
-                    <li><a href="page.html">Наша команда</a></li>
-                    <li><a href="page2.html">Контакти</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
-<div class="pages4-h"></div>
-<div class="container service">
-  <p class="service-h">Бухгалтерський і податковий облік </p>
-  <ul class="service-ul">
-    <li>
-        <span>
-           Допомога у виборі системи оподаткування й програмного забезпечення. 
-       </span>
-   </li>
-   <li>
-    <span>
-       Складання облікової політики. 
-   </span>
-</li>
-<li>
-    <span>
-       Комплексне ведення бухгалтерського й податкового обліку. 
-   </span>
-</li>
-<li>
-    <span>
-       Оброблення первинної документації. 
-   </span>
-</li>
-<li>
-    <span>
-       Надання звітів контролюючим органам 
-   </span>
-</li>
-</ul>
-
-
-
-<div class="span7">
-    <div class="widget stacked widget-table action-table">
-        <div class="widget-content">
-            <table class="table table-striped table-responsive">
-                <tbody>
-                    <tr>
-                        <td class="header-td">Найменування послуги </td>
-                        <td class="header-td">без операцій, грн</td>
-                        <td class="header-td">до 100 операцій на місяць, грн</td>
-                        <td class="header-td">до 250 операцій на місяць, грн</td>
-                        <td class="header-td">до 500 операцій на місяць, грн</td>
-                        <td class="header-td">за кожну операцію понад тариф, грн</td>
-                    </tr>
-                    <tr>
-                        <td class="header-td" style="width: 100%;" width="90%">Комплексне обслуговування юридичної особи (без обліку заробітної плати):</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>-</td>
-                    </tr>
-                    <tr>
-                        <td>Загальна система оподаткування без ПДВ</td>
-                        <td>2500</td>
-                        <td>3500</td>
-                        <td>4500</td>
-                        <td>6000</td>
-                        <td>35</td>
-                    </tr>
-                    <tr>
-                        <td>Загальна система оподаткування з ПДВ</td>
-                        <td>3000</td>
-                        <td>4000</td>
-                        <td>5000</td>
-                        <td>7500</td>
-                        <td>50</td>
-                    </tr>
-                    <tr>
-                        <td>Спрощена система оподаткування без ПДВ</td>
-                        <td>2000</td>
-                        <td>2500</td>
-                        <td>3500</td>
-                        <td>5000</td>
-                        <td>35</td>
-                    </tr>
-                    <tr>
-                        <td>Спрощена система оподаткування з ПДВ</td>
-                        <td>2500</td>
-                        <td>3500</td>
-                        <td>4500</td>
-                        <td>6000</td>
-                        <td>50</td>
-                    </tr>
-                    <tr>
-                        <td class="header-td" style="width: 100%;" width="90%">Комплексне бухгалтерське обслуговування фізичної особи - підприємця (без обліку заробітної плати):</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>-</td>
-                    </tr>
-                    <tr>
-                        <td>Спрощена система оподаткування 1,2 група</td>
-                        <td>500</td>
-                        <td>1500</td>
-                        <td>2500</td>
-                        <td>5000</td>
-                        <td>15</td>
-                    </tr>
-                    <tr>
-                        <td>Спрощена система опопдаткування 3 група без ПДВ</td>
-                        <td>1000</td>
-                        <td>2500</td>
-                        <td>3500 </td>
-                        <td>4500</td>
-                        <td>15</td>
-                    </tr>
-                    <tr>
-                        <td>Спрощена система оподаткування 3 група з ПДВ</td>
-                        <td>2500</td>
-                        <td>3500</td>
-                        <td>4500</td>
-                        <td>6000</td>
-                        <td>50</td>
-                    </tr>
-                    <tr>
-                        <td>Загальна система оподаткування без ПДВ</td>
-                        <td>2500</td>
-                        <td>3500</td>
-                        <td>4500</td>
-                        <td>6000</td>
-                        <td>35</td>
-                    </tr>
-                    <tr>
-                        <td>Загальна система оподаткування з ПДВ</td>
-                        <td>3000</td>
-                        <td>4000</td>
-                        <td>5000</td>
-                        <td>7500</td>
-                        <td>50</td>
-                    </tr>
-                    <tr>
-                        <td class="header-td" style="width: 100%;" width="90%">Облік взаєморозрахунків з працівниками (за 1 особу):</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>-</td>
-                    </tr>
-                    <tr>
-                        <td>Облік заробітної плати та робочого часу</td>
-                        <td>100</td>
-                        <td>100</td>
-                        <td>100</td>
-                        <td>100</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Розрахунок нарахувань по листку непрацездатності (лікарняний)</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Розрахунок нарахувань відпустки </td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Розрахунок інших компенсаційних та заохочувальних виплат</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="header-td" style="width: 100%;" width="90%">Разові та додаткові послуги:</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>-</td>
-                    </tr>
-                    <tr>
-                        <td>Консультування, год</td>
-                        <td>250</td>
-                        <td>250</td>
-                        <td>250</td>
-                        <td>250</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Розробка облікової політики підприємства, шт</td>
-                        <td>1000</td>
-                        <td>1000</td>
-                        <td>1000</td>
-                        <td>1000</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Навчання персоналу, год</td>
-                        <td>300</td>
-                        <td>300</td>
-                        <td>300</td>
-                        <td>300</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Розробка посадової інструкції співробітникам, шт</td>
-                        <td>250</td>
-                        <td>250</td>
-                        <td>250</td>
-                        <td>250</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Створення нової облікової бази в 1С, шт</td>
-                        <td>500</td>
-                        <td>500</td>
-                        <td>500</td>
-                        <td>500</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Відправка платежів ч/з клієнт-банк, шт</td>
-                        <td>35</td>
-                        <td>35</td>
-                        <td>35</td>
-                        <td>35</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Підготовка документів для отримання електронного цифрового підпису, пакет</td>
-                        <td>500</td>
-                        <td>500</td>
-                        <td>500</td>
-                        <td>500</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Підготовка документів для кредитування пакет</td>
-                        <td>від 1000</td>
-                        <td>від 1000</td>
-                        <td>від 1000</td>
-                        <td>від 1000</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Підготовка документів для перевірки, пакет</td>
-                        <td>від 1000</td>
-                        <td>від 1000</td>
-                        <td>від 1000</td>
-                        <td>від 1000</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Підготовка документів для бюджетного відшкодування ПДВ (одноразово), пакет</td>
-                        <td>від 3000</td>
-                        <td>від 3000</td>
-                        <td>від 3000</td>
-                        <td>від 3000</td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
-
-        </div> <!-- /widget-content -->
-
-    </div> <!-- /widget -->
-</div>
-<div class=" blog-bottom">
-    <p  class=" blog-bottom-p"> Мені потрібні послуги бухгалтера </p>
-    <a class="btn btn-header2" data-toggle="modal" data-target="#squarespaceModalUa">Надіслати заявку</a>
-</div>
-<p class="service-h">Фінансовий та управлінський облік </p>
-<ul class="service-ul">
-    <li>
-        <span>
-            Розробка системи показників для прийняття рішень. Управлінський облік.
-        </span>
-    </li>
-    <li>
-        <span>
-         Бюджетування й факторний аналіз. 
-     </span>
- </li>
- <li>
-    <span>
-        Складання фінансової звітності й аналіз показників діяльност.
-    </span>
-</li>
-<li>
-    <span>
-        Фінансове моделювання, аналіз ризиків та оцінка ефективності інвестицій.
-    </span>
-</li>
-<li>
-    <span>
-     Автоматизація обліку, консолідація напрямів бізнесу.
- </span>
-</li>
-</ul>
-
-<div class="span7">
-    <div class="widget stacked widget-table action-table">
-        <div class="widget-content">
-            <table class="table table-striped table-responsive">
-                <tbody>
-                    <tr>
-                        <td class="header-td">Найменування послуги</td>
-                        <td class="header-td">Вартість, грн</td>
-                    </tr>
-                    <tr>
-                        <td>Фінансова модель для Start-up (excel з формулами)</td>
-                        <td >2500</td>
-                    </tr>
-                    <tr>
-                        <td>Оцінка ефективності інвестицій</td>
-                        <td>1000</td>
-                    </tr>
-                    <tr>
-                        <td>Карта ризиків підприємства</td>
-                        <td>від 500</td>
-                    </tr>
-                    <tr>
-                        <td>SWOT аналіз підприємства</td>
-                        <td>500</td>
-                    </tr>
-                    <tr>
-                        <td>Бізнес-план (word)</td>
-                        <td>від 1000</td>
-                    </tr>
-                    <tr>
-                        <td>Презентацій проекту, направлення, продукту і тд (pptx, pdf), 1стр</td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <td>Облікова політика (управлінський облік)</td>
-                        <td>1000</td>
-                    </tr>
-                    <tr>
-                        <td>Розробка та впровадження управлінського обліку</td>
-                        <td>від 2500</td>
-                    </tr>
-                    <tr>
-                        <td>Розробка та впровадження систем бюджетування</td>
-                        <td>від 2500</td>
-                    </tr>
-                    <tr>
-                        <td>Фінансова звітність (P&L, CashFlow, BalanceSheet)</td>
-                        <td>від 1000</td>
-                    </tr>
-                    <tr>
-                        <td>Автоматизація обліку та звітності, год</td>
-                        <td>250</td>
-                    </tr>
-                    <tr>
-                        <td>Консультування, год</td>
-                        <td>250</td>
-                    </tr>
-                    <tr>
-                        <td>Навчання персоналу, год</td>
-                        <td>300</td>
-                    </tr>
-                    <tr>
-                        <td>Реєстрація та використання підприємств іноземних юрисдикцій</td>
-                        <td>договірна</td>
-                    </tr>
-                    <tr>
-                        <td>Робота з іноземними банками та платіжними системами</td>
-                        <td>договірна</td>
-                    </tr>
-                    <tr>
-                        <td>Комплексне ведення управлінського та фінансового обліку, міс</td>
-                        <td>від 5000</td>
-
-                    </tbody>
-                </table>
-
-            </div> <!-- /widget-content -->
-
-        </div> <!-- /widget -->
-    </div>
-    <div class=" blog-bottom">
-        <p  class=" blog-bottom-p"> Мені потрібні послуги фінансиста</p>
-        <a class="btn btn-header2" data-toggle="modal" data-target="#squarespaceModalUa">Надіслати заявку</a>
-    </div>
-
-    <p class="service-h">Кадрове діловодство й добір персоналу</p>
-    <ul class="service-ul">
-        <li>
-            <span>
-             Пошук, добір та оцінка персоналу.
-         </span>
-     </li>
-     <li>
-        <span>
-            Складання штатного розпису, ведення обліку робочого часу.
-        </span>
-    </li>
-    <li>
-        <span>
-            Оформлення прийняття, переведення, звільнення працівників, усіх видів відпусток, лікарняних листків. Формування особових справ. Облік трудових книжок.
-        </span>
-    </li>
-    <li>
-        <span>
-         Складання посадових інструкцій, положень про відділи, іншої регламентованої документації.
-       </span>
-   </li>
-   <li>
-    <span>
-        Аудит кадрових документів минулих періодів та їх синхронізація з бухгалтерським обліком.
-    </span>
-</li>
-</ul>
-
-<div class="span7">
-    <div class="widget stacked widget-table action-table">
-        <div class="widget-content">
-            <table class="table table-striped table-responsive">
-                <tbody>
-                 <tr>
-                    <td class="header-td">Найменування послуги</td>
-                    <td class="header-td">Вартість, грн</td>
-                </tr>
-                <tr>
-                    <td>Штатний розпис, шт</td>
-                    <td >250</td>
-                </tr>
-                <tr>
-                    <td>Прийом на роботу, 1 ос</td>
-                    <td>100</td>
-                </tr>
-                <tr>
-                    <td>Звільнення, 1 ос</td>
-                    <td>100</td>
-                </tr>
-                <tr>
-                    <td>Переведення, 1 ос</td>
-                    <td>100</td>
-
-                </tr>
-                <tr>
-                    <td>Внутрішні накази та розпорядження, шт</td>
-                    <td>100</td>
-                </tr>
-                <tr>
-                    <td>Внутрішні нормативні документи (внутрішній розпорядок, колективний договір, ін)</td>
-                    <td>250</td>
-                </tr>
-                <tr>
-                    <td>Формування особової справи, 1 ос</td>
-                    <td>100</td>
-                </tr>
-                <tr>
-                    <td>Облік та заповнення трудових книг</td>
-                    <td>50</td>
-                </tr>
-                <tr>
-                    <td>Пошук, підбір та оцінка персоналу, 1 ос</td>
-                    <td>50% оклада</td>
-                </tr>
-                <tr>
-                    <td>Розробка посадової інструкції, шт</td>
-                    <td>250</td>
-                </tr>
-                <tr>
-                    <td>Охорона праці та пожежна безпека</td>
-                    <td>від 2500</td>
-                </tr>
-
-                <tr>
-                    <td>Пошук та працевлаштування інваліда, 1 ос</td>
-                    <td>100% оклада </td>
-                </tr>
-                <tr>
-                    <td>Консультування, год</td>
-                    <td>250</td>
-                </tr>
-                <tr>
-                    <td>Навчання персоналу, год</td>
-                    <td>300</td>
-                </tr>
-                <tr>
-                    <td>Комплексне ведення кадрового обліку, міс</td>
-                    <td>від 2500</td>
-                </tr>
-            </tbody>
-        </table>
-
-    </div> <!-- /widget-content -->
-
-</div> <!-- /widget -->
-</div>
-<div class=" blog-bottom">
-    <p  class=" blog-bottom-p">Мені потрібні послуги кадровика  </p>
-    <a class="btn btn-header2" data-toggle="modal" data-target="#squarespaceModalUa">Надіслати заявку</a>
-</div>
-<p class="service-h">Юридичний супровід </p>
-<ul class="service-ul">
-    <li>
-        <span>
-           Консультації та допомога в організації бізнесу, зміні стратегій роботи, виході з кризових ситуацій, зокрема переговорна, претензійна та судова практика.
-       </span>
-   </li>
-   <li>
-    <span>
-        Складання й перевірка документації (договори, претензії, позови тощо).
-    </span>
-</li>
-<li>
-    <span>
-       Оформлення нетипових господарських операцій.
-   </span>
-</li>
-<li>
-    <span>
-      Вибір схеми функціювання бізнесу, придбання або продажу активів, інших операцій.
-  </span>
-</li>
-<li>
-    <span>
-        Проведення переговорів, установчих зборів, круглих столів.
-    </span>
-</li>
-</ul>
-
-<div class="span7">
-    <div class="widget stacked widget-table action-table">
-        <div class="widget-content">
-            <table class="table table-striped table-responsive">
-                <tbody>
-                    <tr>
-                        <td class="header-td">Найменування послуги</td>
-                        <td class="header-td">Вартість, грн</td>
-                    </tr>
-                    <tr>
-                        <td>Консультування (окрім судових питань), год</td>
-                        <td>250</td>
-                    </tr>
-                    <tr>
-                        <td>Аналіз документації, 1 стр</td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <td>Складання типового договору з індивідуальними коригуваннями (оренда, купівля-продаж, поставка, підряд), шт</td>
-                        <td>від 700</td>
-                    </tr>
-                    <tr>
-                        <td>Складання індивідуального договору, шт</td>
-                        <td>від 1000</td>
-                    </tr>
-                    <tr>
-                        <td>Аналіз договору на відповідність діючому законодавству, шт</td>
-                        <td>від 500</td>
-                    </tr>
-                    <tr>
-                        <td>Складання зовнішньоекономічного договору, шт</td>
-                        <td>від 1500</td>
-                    </tr>
-                    <tr>
-                        <td>Участь в перемовинах, год</td>
-                        <td>500</td>
-                    </tr>
-                    <tr>
-                        <td>Розробка внутрішніх нормативних документів, шт</td>
-                        <td>250</td>
-                    </tr>
-                    <tr>
-                        <td>Підготовка документів для офіційного листування (лист, відповідь на лист), шт </td>
-                        <td>250</td>
-                    </tr>
-                    <tr>
-                        <td>Підготовка претензій, шт</td>
-                        <td>від 1000</td>
-                    </tr>
-                    <tr>
-                        <td>Розрахунок пені, шт</td>
-                        <td>договірна</td>
-                    </tr>
-                    <tr>
-                        <td>Судові питання</td>
-                        <td>договірна</td>
-                    </tr>
-                    <tr>
-                        <td>Комплексне юридичне обслуговування, міс</td>
-                        <td>від 5000</td>
-                    </tr>
-                </tbody>
-            </table>
-
-        </div> <!-- /widget-content -->
-
-    </div> <!-- /widget -->
-</div>
-<div class=" blog-bottom">
-    <p  class=" blog-bottom-p"> Мені потрібні послуги юриста</p>
-    <a class="btn btn-header2" data-toggle="modal" data-target="#squarespaceModalUa">Надіслати заявку</a>
-</div>
-
-<p class="service-h">Автоматизація обліку й адміністрування комп’ютерних мереж </p>
-<ul class="service-ul">
-    <li>
-        <span>
-            Установлення й доопрацювання систем обліку.
-        </span>
-    </li>
-    <li>
-        <span>
-            Обслуговування комп’ютерних мереж та оргтехніки. Установлення й оновлення програмного забезпечення. 
-        </span>
-    </li>
-    <li>
-        <span>
-        Забезпечення безперебійної роботи IT-інфраструктури.
-     </span>
- </li>
- <li>
-    <span>
-       Адміністрування й наповнення сайтів.
-   </span>
-</li>
-<li>
-    <span>
-       Організація доступу для віддалених працівників і підрозділів.
-   </span>
-</li>
-</ul>
-
-<div class="span7">
-    <div class="widget stacked widget-table action-table">
-        <div class="widget-content">
-            <table class="table table-striped table-responsive">
-                <tbody>
-                    <tr>
-                        <td class="header-td">Найменування послуги</td>
-                        <td class="header-td">Вартість, грн</td>
-                    </tr>
-                    <tr>
-                        <td>Написання ТЗ для індивідуальних доробок в 1С, год</td>
-                        <td>250</td>
-                    </tr>
-                    <tr>
-                        <td>Послуги програміста 1С (віддалено), год</td>
-                        <td>500</td>
-                    </tr>
-                    <tr>
-                        <td>Послуги програміста 1С (з виїздом), год</td>
-                        <td>600</td>
-                    </tr>
-                    <tr>
-                        <td>Послуги системного адміністратора (віддалено), год</td>
-                        <td>250</td>
-                    </tr>
-                    <tr>
-                        <td>Послуги системного адміністратора (з виїздом), год</td>
-                        <td>300</td>
-                    </tr>
-                    <tr>
-                        <td>Навчання персоналу, год</td>
-                        <td>250</td>
-                    </tr>
-                    <tr>
-                        <td>Створення сайтів та лендінгів</td>
-                        <td>договірна</td>
-                    </tr>
-                    <tr>
-                        <td>Консультування, год</td>
-                        <td>250</td>
-                    </tr>
-                    <tr>
-                        <td>Комплексне обслуговування мереж та оргтехніки, міс</td>
-                        <td>від 2500</td>
-                    </tr>
-
-                </tbody>
-            </table>
-
-        </div> <!-- /widget-content -->
-
-    </div> <!-- /widget -->
-</div>
-<div class=" blog-bottom">
-    <p  class=" blog-bottom-p">Мені потрібні послуги програміста або системного адміністратора</p>
-    <a class="btn btn-header2" data-toggle="modal" data-target="#squarespaceModalUa">Надіслати заявку</a>
-</div>
-
-
-
-
-</div>
-
-<div class="scrollup">
-    &uarr;
-</div>
-<div class="modalUA fade" id="squarespaceModalUa" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="lineModalLabel">Залиште заявку і ми зв’яжемось з вами найближчим часом</h4>
-    </div>
-    <div class="modal-body">
-
-        <!-- content goes here -->
-        <form name="feedback"  method="post">
-          <input type="hidden" name="project_name" value="Партнерство украина">
-          <input type="hidden" name="admin_email" value="info@partnership.kyiv.com">
-          <input type="hidden" name="form_subject" value="Заявка с главной">
-          <!-- основное содержимое (тело) модального окна -->
-          <div class="form-group">
-            <input type="text"  class="form-control" id="name" name="Имя" placeholder="Ваше ім’я" required>
-        </div>
-        <div class="form-group">
-            <input type="text" class="form-control" id="email" name="е-mail" placeholder="Ваш е-mail" required>
-        </div>
-        <div class="form-group">
-            <input type="text" class="form-control" id="phone" name="Номер телефона" placeholder="Ваш номер телефону" required>
-        </div>
-        <div class="form-group">
-            <textarea name="Сообщение" class="form-control" id="mess" cols="30" rows="10" placeholder="Повідомлення" style="resize: none;"></textarea>
-        </div>
-        <button class="btn btn-model"  type="button"  data-dismiss="modal">Залишити заявку</button>
-    </form>
-
-</div>
-
-</div>
-</div>
-</div>
-
 </div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.js"></script>
 <script src="js/main.js"></script>
-<div class="modal fade" id="squarespaceModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+<div class="modalUA fade" id="telegramm" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
       <div class="modal-content">
-          <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-              <h4 class="modal-title" id="lineModalLabel">Остаьвте заявку и мы свяжемся с вами в ближайшее время</h4>
-          </div>
-          <div class="modal-body">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+          <h4 class="modal-title" id="lineModalLabel">WhatsApp/Viber/Telegram </h4>
+      </div>
+      <div class="modal-body">
 
-              <!-- content goes here -->
-              <form name="feedback"  method="post">
-                  <input type="hidden" name="project_name" value="Партнерство украина">
-                  <input type="hidden" name="admin_email" value="info@partnership.kyiv.com">
-                  <input type="hidden" name="form_subject" value="Заявка с главной">
-                  <!-- основное содержимое (тело) модального окна -->
-                  <div class="form-group">
-                      <input type="text"  class="form-control" id="name" name="Имя" placeholder="Ваше имя" required>
-                  </div>
-                  <div class="form-group">
-                      <input type="text" class="form-control" id="email" name="е-mail" placeholder="Ваш е-mail" required>
-                  </div>
-                  <div class="form-group">
-                      <input type="text" class="form-control" id="phone" name="Номер телефона" placeholder="Ваш номер телефона" required>
-                  </div>
-                  <div class="form-group">
-                      <textarea name="Сообщение" class="form-control" id="mess" cols="30" rows="10" placeholder="Сообщение" style="resize: none;"></textarea>
-                  </div>
-                  <button class="btn btn-model"  type="button"  data-dismiss="modal">Оставить заявку</button>
-              </form>
-
-          </div>
+          <h2>+380966000300</h2>
 
       </div>
+
   </div>
 </div>
 </div>

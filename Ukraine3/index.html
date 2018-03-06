@@ -11,7 +11,6 @@
   <link href="css/bootstrap.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 
-
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -21,7 +20,7 @@
   </head>
   <body>
 
-    <div class="ru   jqueryOptions current-opt">	 
+    <div class="ru">	 
       <header>
         <div class="container">
           <div class="header-top">
@@ -32,30 +31,32 @@
               <a href="https://www.facebook.com/PartnershipUkraine/" class="header-top-a">
                 <img src="img/soch1.png" alt="/" class="soch">
               </a>
-              <a href="#" class="header-top-a">
+              <a href="https://www.linkedin.com/company/partnerstvoukraine/" target="_blank" class="header-top-a">
                 <img src="img/soch2.png" alt="/" class="soch">
               </a>
               <a href="skype:live:partner40486060?chat" class="header-top-a">
                 <img src="img/soch3.png" alt="/" class="soch">
               </a>
-              <a href="#" class="header-top-a">
+              <a href="#" class="header-top-a" data-toggle="modal" data-target="#telegramm">
                 <img src="img/soch4.png" alt="/" class="soch">
               </a>
-              <a href="#" class="header-top-a">
+              <a href="#" class="header-top-a" data-toggle="modal" data-target="#telegramm">
                 <img src="img/soch5.png" alt="/" class="soch">
               </a>
-              <a class="header-top-a" href="#">
+              <a class="header-top-a" href="#" data-toggle="modal" data-target="#telegramm">
                 <img src="img/soch6.png" alt="/" class="soch">
               </a>
             </div>
             <img src="img/soch7.png" alt="/" class="soch2">
-            <select  name="choose" id="choose" class="js-example-basic-hide-search input-select" >
-              <option class="ru" value="ru" >RU</option>
-              <option  class="ua" value="ua">UA</option>
+            <select  name="choose" id="choose" class="js-example-basic-hide-search input-select" onchange="top.location=this.value">
+              <option class="ru" value="" selected>RU</option>
+              <option  class="ua" value="ua/index.html">UA</option>
             </select>
             <div class="header-top-p">
-              <img src="img/mail.png" class="" alt="/">
-              info@partnership.kyiv.com
+              <a href="mailto:info@partnership.kyiv.ua" style="color: initial">
+                <img src="img/mail.png" class="" alt="/">
+                info@partnership.kyiv.ua
+              </a>
             </div>
             <div class="header-top-p">
               <img src="img/phono.png" class="" alt="/">
@@ -82,7 +83,15 @@
                      <div id="navbar" class="navbar-collapse collapse">
                       <ul class="nav navbar-nav">
                         <li><a href="#">Главная</a></li>
-                        <li><a href="page4.html">Услуги и цены</a></li>
+                        <li><a href="page4.html">Услуги и цены</a>
+                          <ul class="submenu">
+                            <li><a href="page4.html#1">Бухгалтерия </a></li>
+                            <li><a href="page4.html#2">Финансовый отдел </a></li>
+                            <li><a href="page4.html#3">Отдел кадров </a></li>
+                            <li><a href="page4.html#4">Юридический отдел </a></li>
+                            <li><a href="page4.html#5">IT-отдел </a></li>
+                          </ul>
+                        </li>
                         <li><a href="page.html">Наша команда</a></li>
                         <li><a href="page2.html">Контакты</a></li>
                       </ul>
@@ -198,358 +207,114 @@
                   <figure class="block3-figure">
                     <img src="img/block3-img4.png" alt="/" class="block1-img">
                     <figcaption class="block3-figcaption">
-                      <h6>Выгодно</h6>
-                      Экономьте деньги - не нужно платить огромные налоги на зарплату, больничные и отпускные. Вместо этого вы уменьшаете налог на прибыль.  Нет необходимости арендовать дополнительно офис, покупать мебель, компьютерную и оргтехнику.
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-            </div>
-            <div class="container block4">
-              <h3>Cхема работы</h3>
-              <div class="block4-div">
-                <img src="img/block4-img1.png" alt="/" class="block4-img"><br>
-                Отправить заявку
-              </div>
-              <img src="img/arra.png" alt="/" class="arra">
-              <div class="block4-div">
-                <img src="img/block4-img2.png" alt="/" class="block4-img"><br>
-                Заполнить бриф
-              </div>
-              <img src="img/arra.png" alt="/" class="arra">
-              <div class="block4-div">
-                <img src="img/block4-img3.png" alt="/" class="block4-img"><br>
-                Согласуйте цену 
-              </div>
-              <img src="img/arra.png" alt="/" class="arra">
-              <div class="block4-div">
-                <img src="img/block4-img4.png" alt="/" class="block4-img"><br>
-                Подпишите договор 
-              </div>
-              <img src="img/arra.png" alt="/" class="arra">
-              <div class="block4-div">
-                <img src="img/block4-img5.png" alt="/" class="block4-img"><br>
-                Получите надежного партнера 
-              </div>
-
-            </div>
-
-            <div class=" block5">
-              <h3>Начать сотрудничество</h3>
-              <p class="block5-p">
-                Отправьте заявку 
-                и получите<br> бесплатную консультацию (прилагаю макет)
-              </p>
-              <a class="btn btn-block5" data-toggle="modal" data-target="#squarespaceModal">Хочу надежный бэк-офис!</a>
-            </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d616.3074625329248!2d30.458694648092234!3d50.50688479850154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d278ac6b36df%3A0x935752daa9dceda4!2z0YPQuy4g0JDQstGC0L7Qt9Cw0LLQvtC00YHQutCw0Y8sIDI0LzIsINCa0LjQtdCyLCDQo9C60YDQsNC40L3QsCwgMDIwMDA!5e0!3m2!1sru!2sru!4v1518094000855" class="map" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-
-            <div class="scrollup">
-              &uarr;
-            </div>
-            <div class="modal fade" id="squarespaceModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-                    <h4 class="modal-title" id="lineModalLabel">Оставьте заявку и мы свяжемся с вами в ближайшее время</h4>
-                  </div>
-                  <div class="modal-body">
-
-                    <!-- content goes here -->
-                    <form name="feedback"  method="post">
-                      <input type="hidden" name="project_name" value="Партнерство украина">
-                      <input type="hidden" name="admin_email" value="info@partnership.kyiv.com">
-                      <input type="hidden" name="form_subject" value="Заявка с главной">
-                      <!-- основное содержимое (тело) модального окна -->
-                      <div class="form-group">
-                        <input type="text"  class="form-control" id="name" name="Имя" placeholder="Ваше имя" required>
-                      </div>
-                      <div class="form-group">
-                        <input type="text" class="form-control" id="email" name="е-mail" placeholder="Ваш е-mail" required>
-                      </div>
-                      <div class="form-group">
-                        <input type="text" class="form-control" id="phone" name="Номер телефона" placeholder="Ваш номер телефона" required>
-                      </div>
-                      <div class="form-group">
-                        <textarea name="Сообщение" class="form-control" id="mess" cols="30" rows="10" placeholder="Сообщение" style="resize: none;"></textarea>
-                      </div>
-                      <button class="btn btn-model"  type="button"  data-dismiss="modal">Оставить заявку</button>
-                    </form>
-
-                  </div>
-
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- -->
-          <div class="ua  jqueryOptions"> 
-            <header>
-              <div class="container">
-                <div class="header-top">
-                  <a href="index.html">
-                    <img src="img/logo.png" alt="logo" class="logo">
-                  </a>
-                  <div class="block-header-top-a">
-                    <a href="https://www.facebook.com/PartnershipUkraine/" class="header-top-a">
-                      <img src="img/soch1.png" alt="/" class="soch">
-                    </a>
-                    <a href="#" class="header-top-a">
-                      <img src="img/soch2.png" alt="/" class="soch">
-                    </a>
-                    <a href="skype:live:partner40486060?chat" class="header-top-a">
-                      <img src="img/soch3.png" alt="/" class="soch">
-                    </a>
-                    <a href="#" class="header-top-a">
-                      <img src="img/soch4.png" alt="/" class="soch">
-                    </a>
-                    <a href="#" class="header-top-a">
-                      <img src="img/soch5.png" alt="/" class="soch">
-                    </a>
-                    <a class="header-top-a" href="#">
-                      <img src="img/soch6.png" alt="/" class="soch">
-                    </a>
-                  </div>
-                  <img src="img/soch7.png" alt="/" class="soch2">
-                  <select  name="choose" id="choose2" class="js-example-basic-hide-search input-select" >
-                   <option  class="ua2" value="ua">UA</option>
-                   <option class="ru2" value="ru" >RU</option>
-
-
-                 </select>
-                 <div class="header-top-p">
-                  <img src="img/mail.png" class="" alt="/">
-                  info@partnership.kyiv.com
-                </div>
-                <div class="header-top-p">
-                  <img src="img/phono.png" class="" alt="/">
-                  + 38 096 6000 300
-                </div>
-              </div>
-            </div>
-            <div class="vid-container">
-              <video class="bgvid" autoplay="autoplay" muted="muted" preload="auto" loop>
-                <source src="video/videp.mp4" type="video/webm" controls>
-                </video>
-                <div class="inner-container">
-                  <video class="bgvid  inner" autoplay="autoplay" muted="muted" preload="auto" loop>
-                    <source src="video/videp.mp4" type="video/webm" pause>
-                    </video>
-                    <div class="box">
-                      <nav class="navbar navbar1  navbar-fixed-top navbar-top navbar-static">
-                        <div class="container">
-                          <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                             <img src="img/buter.png" alt="/" class="buter">
-                           </button>
-                         </div>
-                         <div id="navbar" class="navbar-collapse collapse">
-                          <ul class="nav navbar-nav">
-                            <li><a href="#">Головна</a></li>
-                            <li><a href="page4.html">Послуги та ціни</a></li>
-                            <li><a href="page.html">Наша команда</a></li>
-                            <li><a href="page2.html">Контакти</a></li>
-                          </ul>
-
-                        </div>
-                      </div>
-                    </nav>
-
-                    <h1>Наша команда — ваш надійний бек-офіс</h1>
-                    <p class="header-p">
-                      Здатність фокусуватися — одна з головних рис успішних людей.  <br> Сконцентруйтеся на стратегічній меті й розвиткові бізнесу,<br> доки наші фахівці виконують другорядні завдання.                      </p>
-                      <div class="header-img">
-                        <div class="block-header-img">
-                          <img src="img/header-img1.png" alt="/" class="head-img"><br>
-                          Бухгалтерія 
-                        </div>
-                        <div class="block-header-img">
-                          <img src="img/header-img2.png" alt="/" class="head-img"><br>
-                          Фінансовий відділ
-                        </div>
-                        <div class="block-header-img">
-                          <img src="img/header-img3.png" alt="/" class="head-img"><br>
-                          Відділ кадрів
-                        </div>
-                        <div class="block-header-img">
-                          <img src="img/header-img4.png" alt="/" class="head-img"><br>
-                          Юридичний відділ 
-                        </div>
-                        <div class="block-header-img">
-
-                          <img src="img/header-img5.png" alt="/" class="head-img"><br>
-                          IT-відділ
-                        </div>
-                      </div>
-
-                      <p class="header-p2">
-                        Аутсорсинг адміністративного персоналу
-                      </p>
-                      <p class="header-p3">
-                       Надішліть заявку, щоб дізнатись подробиці
-                     </p>
-                     <a class="btn btn-header" data-toggle="modal" data-target="#squarespaceModalUa">Хочу надійний бек-офіс</a>
-                   </div>
-                 </div>
-               </div>
-             </header>
-             <div class="container block1">
-              <h3>Для кого?</h3>
-              <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-4">
-                  <figure class="block1-figure">
-                    <img src="img/block1-img1.png" alt="/" class="block1-img">
-                    <figcaption class="block1-figcaption">
-                      стартапів
-                    </figcaption>
-                  </figure>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-4">
-                  <figure class="block1-figure">
-                    <img src="img/block1-img2.png" alt="/" class="block1-img">
-                    <figcaption class="block1-figcaption">
-                     підприємців
-                   </figcaption>
-                 </figure>
-               </div>
-               <div class="col-lg-4 col-md-4 col-sm-4">
-                <figure class="block1-figure">
-                  <img src="img/block1-img3.png" alt="/" class="block1-img">
-                  <figcaption class="block1-figcaption">
-                   малого й середнього бізнесу
-                 </figcaption>
-               </figure>
-             </div>
-           </div>
-         </div>
-         <div class="block2">
-          <h3>Наша ціль</h3>
-          <p class="block2-p">Створити надійний тил, доки ви зайняті <br> стратегічною метою й розвитком бізнесу.</p>
-        </div>
-        <div class="container block3">
-          <h3>З нами</h3>
-          <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-6">
-              <figure class="block3-figure">
-                <img src="img/block3-img1.png" alt="/" class="block1-img">
-                <figcaption class="block3-figcaption">
-                  <h6>Зручно</h6>
-                  Заощаджуйте час: не потрібно добирати, навчати й тестувати персонал. Не потрібно оформлювати прийняття на роботу, звільнення, лікарняний, відпустку, декрет. Немає потреби контролювати й адмініструвати додатковий штат працівників.
-                </figcaption>
-              </figure>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-6">
-              <figure class="block3-figure">
-                <img src="img/block3-img2.png" alt="/" class="block1-img">
-                <figcaption class="block3-figcaption">
-                  <h6>Вигідно</h6>
-                  Заощаджуйте гроші: не потрібно сплачувати величезні податки на зарплату, лікарняні й відпусткові. Натомість ви зменшуєте податок на прибуток. Немає потреби орендувати додатковий офіс, купувати меблі, комп'ютерну й організаційну техніку.                  </figcaption>
-                </figure>
-              </div>
-              <div class="col-lg-6 col-md-6 col-sm-6">
-                <figure class="block3-figure">
-                  <img src="img/block3-img3.png" alt="/" class="block1-img">
-                  <figcaption class="block3-figcaption">
-                    <h6> Безпечно</h6>
-                    Зменшуйте ризики: захистіться від помилок непрофесіональних працівників, перевірок з боку інспекції з питань праці й проблемного звільнення невідповідного персоналу.                  </figcaption>
-                  </figure>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                  <figure class="block3-figure">
-                    <img src="img/block3-img4.png" alt="/" class="block1-img">
-                    <figcaption class="block3-figcaption">
-                      <h6>Ефективно</h6>
-                      Підвищуйте ефективність: сконцентруйтеся на стратегічних завданнях і розвиткові бізнесу, не відволікаючись на другорядні процеси.                  </figcaption>
+                      <h6>Эффективно</h6>
+                      Повышайте эффективность: сконцентрируйтесь на стратегических задачах и развитии бизнеса, не отвлекаясь на второстепенные процессы.                    </figcaption>
                     </figure>
                   </div>
                 </div>
               </div>
               <div class="container block4">
-                <h3>Схема роботи</h3>
+                <h3>Cхема работы</h3>
                 <div class="block4-div">
                   <img src="img/block4-img1.png" alt="/" class="block4-img"><br>
-                  Надішліть заявку
+                  Отправьте заявку
                 </div>
                 <img src="img/arra.png" alt="/" class="arra">
                 <div class="block4-div">
                   <img src="img/block4-img2.png" alt="/" class="block4-img"><br>
-                  Заповніть бриф
+                  Заполните бриф
                 </div>
                 <img src="img/arra.png" alt="/" class="arra">
                 <div class="block4-div">
                   <img src="img/block4-img3.png" alt="/" class="block4-img"><br>
-                  Погодьте ціну
+                  Согласуйте цену
                 </div>
                 <img src="img/arra.png" alt="/" class="arra">
                 <div class="block4-div">
                   <img src="img/block4-img4.png" alt="/" class="block4-img"><br>
-                  Підпишіть договір
+                  Подпишите договор
                 </div>
                 <img src="img/arra.png" alt="/" class="arra">
                 <div class="block4-div">
                   <img src="img/block4-img5.png" alt="/" class="block4-img"><br>
-                  Здобудьте надійного партнера
+                  Получите надежного партнера
                 </div>
 
               </div>
 
               <div class=" block5">
-                <h3>Розпочати співробітництво</h3>
+                <h3>Начать сотрудничество</h3>
                 <p class="block5-p">
-                 Надішліть заявку та отримайте безкоштовну консультацію
-               </p>
-               <a class="btn btn-block5" data-toggle="modal" data-target="#squarespaceModalUa">Хочу надійний бек-офіс</a>
-             </div>
-             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d616.3074625329248!2d30.458694648092234!3d50.50688479850154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d278ac6b36df%3A0x935752daa9dceda4!2z0YPQuy4g0JDQstGC0L7Qt9Cw0LLQvtC00YHQutCw0Y8sIDI0LzIsINCa0LjQtdCyLCDQo9C60YDQsNC40L3QsCwgMDIwMDA!5e0!3m2!1sru!2sru!4v1518094000855" class="map" frameborder="0" style="border:0" allowfullscreen></iframe>
-             <div class="modalUA fade" id="squarespaceModalUa" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+                  Отправьте заявку
+                  и получите<br> бесплатную консультацию
+                </p>
+                <a class="btn btn-block5" data-toggle="modal" data-target="#squarespaceModal">Хочу надежный бэк-офис!</a>
+              </div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d616.3074625329248!2d30.458694648092234!3d50.50688479850154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d278ac6b36df%3A0x935752daa9dceda4!2z0YPQuy4g0JDQstGC0L7Qt9Cw0LLQvtC00YHQutCw0Y8sIDI0LzIsINCa0LjQtdCyLCDQo9C60YDQsNC40L3QsCwgMDIwMDA!5e0!3m2!1sru!2sru!4v1518094000855" class="map" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+
+              <div class="scrollup">
+                &uarr;
+              </div>
+              <div class="modal fade" id="squarespaceModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                      <h4 class="modal-title" id="lineModalLabel">Оставьте заявку и мы свяжемся с вами в ближайшее время</h4>
+                    </div>
+                    <div class="modal-body">
+
+                      <!-- content goes here -->
+                      <form name="feedback"  method="post">
+                        <input type="hidden" name="project_name" value="Партнерство украина">
+                        <input type="hidden" name="admin_email" value="info@partnership.kyiv.ua">
+                        <input type="hidden" name="form_subject" value="Заявка с главной">
+                        <!-- основное содержимое (тело) модального окна -->
+                        <div class="form-group">
+                          <input type="text"  class="form-control" id="name" name="Имя" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="form-group">
+                          <input type="text" class="form-control" id="email" name="е-mail" placeholder="Ваш е-mail" required>
+                        </div>
+                        <div class="form-group" style="display: none;">
+                          <input type="text" class="form-control" id="phone" name="Номер телефона" placeholder="Ваш номер телефона" required>
+                        </div>
+                        <div class="form-group">
+                          <textarea name="Сообщение" class="form-control" id="mess" cols="30" rows="2" placeholder="Сообщение" style="resize: none;"></textarea>
+                        </div>
+                        <button class="btn btn-model"  >Отправить заявку</button>
+                      </form>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- -->
+            
+            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+            <!-- Include all compiled plugins (below), or include individual files as needed -->
+            <script src="js/bootstrap.js"></script>
+            <script src="js/main.js"></script>
+            <!-- line modal -->
+            <div class="modalUA fade" id="telegramm" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-                    <h4 class="modal-title" id="lineModalLabel">Залиште заявку і ми зв’яжемось з вами найближчим часом</h4>
+                    <h4 class="modal-title" id="lineModalLabel">WhatsApp/Viber/Telegram </h4>
                   </div>
                   <div class="modal-body">
 
-                    <!-- content goes here -->
-                    <form name="feedback"  method="post">
-                      <input type="hidden" name="project_name" value="Партнерство украина">
-                      <input type="hidden" name="admin_email" value="info@partnership.kyiv.com">
-                      <input type="hidden" name="form_subject" value="Заявка с главной">
-                      <!-- основное содержимое (тело) модального окна -->
-                      <div class="form-group">
-                        <input type="text"  class="form-control" id="name" name="Имя" placeholder="Ваше ім’я" required>
-                      </div>
-                      <div class="form-group">
-                        <input type="text" class="form-control" id="email" name="е-mail" placeholder="Ваш е-mail" required>
-                      </div>
-                      <div class="form-group">
-                        <input type="text" class="form-control" id="phone" name="Номер телефона" placeholder="Ваш номер телефону" required>
-                      </div>
-                      <div class="form-group">
-                        <textarea name="Сообщение" class="form-control" id="mess" cols="30" rows="10" placeholder="Повідомлення" style="resize: none;"></textarea>
-                      </div>
-                      <button class="btn btn-model"  type="button"  data-dismiss="modal">Залишити заявку</button>
-                    </form>
+                    <h2>+380966000300</h2>
 
                   </div>
 
                 </div>
               </div>
             </div>
-
-            <div class="scrollup">
-              &uarr;
-            </div>
-
-          </div>
-          <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-          <!-- Include all compiled plugins (below), or include individual files as needed -->
-          <script src="js/bootstrap.js"></script>
-          <script src="js/main.js"></script>
-          <!-- line modal -->
-
-        </body>
-        </html>
+          </body>
+          </html>

@@ -1,27 +1,11 @@
 //меню
 $('document').ready(function(){
-   $('#choose').change(function(){
-        if ($('#choose option:selected').hasClass("ru")) {
-            $(".ru").addClass("current-opt");
-             $(".ua").removeClass("current-opt");
-             $(".ru2").prop("selected", true);
-        } else if ($("#choose option:selected").hasClass("ua")) {
-             $(".ua").addClass("current-opt");
-             $(".ru").removeClass("current-opt");
-             $(".ua2").prop("selected", true);
-        }
-    });
-      $('#choose2').change(function(){
-        if ($('#choose2 option:selected').hasClass("ru2")) {
-            $(".ru").addClass("current-opt");
-             $(".ua").removeClass("current-opt");
-             $(".ru").prop("selected", true);
-        } else if ($("#choose2 option:selected").hasClass("ua2")) {
-             $(".ua").addClass("current-opt");
-             $(".ru").removeClass("current-opt");
-             $(".ua").prop("selected", true);
-        }
-    });
+    $(".navbar li ul").hide();
+$(".navbar li:has('.submenu')").hover(
+  function(){
+  $(".navbar li ul").stop().fadeToggle(300);}
+);
+
     var removed = false;
     $('#modal').modal();
     $('#brand2').hide();

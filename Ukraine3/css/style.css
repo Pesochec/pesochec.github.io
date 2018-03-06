@@ -1,5 +1,37 @@
+.header-top a{
+    outline: none;
+    text-decoration: none;
+}
+.navbar ul {
+}
+.navbar ul a {
 
-
+}
+.navbar .submenu {
+  background: rgba(0,0,0,.5);
+  margin: 0;
+  padding: 0;
+}
+.submenu li a {
+  border-bottom: 1px solid rgba(255,255,255,.3);
+  color: white;
+  padding: 5px 0;
+  display: block;
+}
+.submenu li{ 
+display: block!important;
+}
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
 @font-face {
     font-family: OpenSansRegular;
     src: url(../fonts/OpenSansRegular/OpenSansRegular.ttf);
