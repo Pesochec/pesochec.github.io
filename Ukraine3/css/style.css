@@ -7,6 +7,9 @@
 .navbar ul a {
 
 }
+.table-center{
+    text-align: center;
+}
 .navbar .submenu {
   background: rgba(0,0,0,.5);
   margin: 0;
@@ -467,9 +470,15 @@ div.scrollup:hover {
     .navbar-static{
         margin-top: 125px;
     }
+    
 }
 @media (max-width: 767px) {
-
+    .navbar .submenu{
+        background: #000;
+    }
+    .submenu{
+        position: relative;
+    }
     .navbar-nav {
         float: left;
         text-align: left;
