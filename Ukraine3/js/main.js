@@ -41,6 +41,7 @@ $("form").submit(function() { //Change
         }).done(function() {
             swal(
   'Заявка успешно отправлена',
+  '',
   'success'
 )
             setTimeout(function() {
