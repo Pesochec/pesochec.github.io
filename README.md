@@ -1,5 +1,5 @@
 # Александров Данила
-### Junior Frontend разработчик
+### Middle Frontend разработчик
 ## Мое протфолио
 
 [Emailio](https://pesochec.github.io/emailio/)
