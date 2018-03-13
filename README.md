@@ -2,8 +2,6 @@
 ### Junior Frontend разработчик
 ## Мое протфолио
 
-[Студия D17](https://pesochec.github.io/studio/)
-
 [Emailio](https://pesochec.github.io/emailio/)
 
 [One Media](https://pesochec.github.io/1media_v1/)
