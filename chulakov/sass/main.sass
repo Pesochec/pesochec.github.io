@@ -1,0 +1,269 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #bec6cf
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	background: #101114
+	position: relative
+	line-height: 1
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+.wrapper
+	background: #101114
+	&-container
+		margin: 85px auto
+		display: flex
+		position: relative
+		flex-direction: row
+		max-width: 1000px
+		align-content: center
+.sidebar
+	background: #1f2229
+	max-width: 320px
+	width: 100%
+	height: 100%
+	&-fixed
+		position: fixed
+		top: 0
+		height: 543px
+		width: 320px
+	&__logo
+		padding: 65px 30px
+		&-img
+			max-width: 175px
+			height: auto
+	&__nav
+		&-list
+			padding: 0
+			margin: 0
+		&-item
+			list-style: none
+			border-top: 1px solid #22252d
+			&.li-black
+				background: #191c24
+				border-top: 1px solid #20232b
+			&.active
+				a
+					text-decoration: none
+					background: #2a2d37
+					color: #808592
+		&-link
+			padding: 	30px
+			display: block
+			font-family: $second-font
+			font-weight: bold
+			font-size: 18px
+			line-height: 0.8
+			transition: all 0.1s
+			color: #fff
+			span
+				text-shadow: 0px 1px 0px rgba(0, 0, 0, .15)
+			&:hover
+				text-decoration: none
+				background: #2a2d37
+				color: #808592
+.page
+	max-width: 640px
+	background: #f7f8f8
+	width: 100%
+	display: block
+	position: absolute
+	right: 38px
+	margin-bottom: 85px
+	margin-left: 2px
+	&__title
+		background: #00aeef
+		padding: 45px 35px 34px 30px
+		border-bottom: 1px solid #e8e9e9
+		&-offer
+			font-family: $second-font
+			font-size: 35px
+			font-weight: bold
+			color: #193945
+		&-text
+			font-size: 14px
+			padding: 5px 0 0 0
+			margin: 0
+			color: #193945
+			line-height: 20px
+			font-family: Arial
+	&__pay
+		padding: 40px 30px 30px 30px
+		&-title
+			font-size: 16px
+			color: $text
+			margin-top: 10px
+			line-height: 21px
+			font-weight: normal
+
+		&-name
+			color: $text
+			padding-top: 10px
+		&-value
+			color: #373c43
+			padding-left: 40px
+			padding-top: 10px
+.card
+	padding: 0	30px 50px 30px
+	position: relative
+	&__cvc
+		text-align: right
+		position: relative
+		.card__label
+			margin-top: 80px
+		&-hint
+			position: absolute
+			width: 230px
+			padding: 15px
+			right: -240px
+			background: #fff
+			box-shadow: 0 0 10px 0px rgba(#000, 0.5)
+			top: -20px	
+			z-index: 20
+			display: none
+			text-align: left
+			&:before
+				content: ""
+				bottom: 15px
+				position: absolute
+				border: 5px solid transparent
+				left: -15px
+				border-right: 10px solid #fff
+			&-button
+				position: absolute
+				top: 35px
+				width: 25px
+				height: 25px
+				border: 1px solid #bec6cf
+				border-radius: 50%
+				right: 10px
+				z-index: 9
+				div
+					position: absolute
+					top: 50%
+					left: 50%
+					color: #bec6cf
+					margin: -7px -4px
+	&__label
+		margin-top: 13px
+		color: #8494ab
+		font-size: 16px
+	&__input
+		height: 42px
+		margin-top: 10px
+		border: 1px solid #e4e9ee
+		background: #fff
+		font-size: 16px
+		width: 100%
+		&-cvc
+			width: 133px
+			position: relative
+			padding: 0 15px
+			z-index: 1
+		&-name
+			padding: 0 15px
+		&-moon
+			width: 70px
+			padding: 0 13px
+		&-year
+			width: 85px
+			padding: 0 10px
+	&-bg1
+		background: #f7f8f8
+		border: 1px solid #e4e9ee
+		width: 350px
+		height: 235px
+		position: relative
+		z-index: 3
+		padding: 15px
+		padding-top: 5px
+		border-radius: 10px
+	&-bg2
+		background: #f7f8f8
+		border: 1px solid #e4e9ee
+		width: 350px
+		position: absolute
+		right: 30px
+		top: 60px
+		z-index: 1
+		height: 235px
+		padding: 15px
+		border-radius: 10px
+		&::before
+			content: ""
+			height: 42px
+			width: 100%
+			left: 0
+			top: 25px
+			position: absolute
+			background: #e4e9ee
+	&__title
+		font-size: 21px
+		font-family: $second-font
+		font-weight: bold
+		color: #383d43
+		margin-bottom: 20px
+	&__number
+		&-input
+			width: 23%
+			text-align: center
+	&__button
+		border-radius: 3px
+		border: none
+		font-size: 14px
+		color: #fff
+		margin-top: 35px
+		font-weight: bold
+		font-family: $second-font
+		background-image: -moz-linear-gradient( 90deg, rgba(#83b200, 1) 0%, rgba(#a2c500, 1) 100%)
+		background-image: -webkit-linear-gradient( 90deg, rgba(#83b200, 1) 0%, rgba(#a2c500, 1) 100%)
+		background-image: -ms-linear-gradient( 90deg, rgba(#83b200, 1) 0%, rgba(#a2c500, 1) 100%)
+		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.02)
+		width: 173px
+		cursor: pointer
+		transition: all 0.2s
+		height: 40px
+		&:hover
+			background-image: -moz-linear-gradient( 90deg, rgba(#83b200, 1) 0%, rgba(#83b200, 1) 100%)
+			background-image: -webkit-linear-gradient( 90deg, rgba(#83b200, 1) 0%, rgba(#83b200, 1) 100%)
+			background-image: -ms-linear-gradient( 90deg, rgba(#83b200, 1) 0%, rgba(#83b200, 1) 100%)
+.footer
+	background: #373c43
+	padding: 30px
+	font-size: 12px
+	color: #89909d
+	line-height: 18px
+
+
+@import "media" // Always at the end

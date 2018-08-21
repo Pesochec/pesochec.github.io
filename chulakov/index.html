@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Тестовое задание Чулаков #1</title>
+	<meta name="description" content="Тестовое задание Чулаков #1">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<meta name="theme-color" content="#000">
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+	<!-- Главный Контейнер -->
+	<main class="wrapper">
+		<div class="wrapper-container">
+			<!-- Боковая панель -->
+			<aside class="sidebar">
+				<div class="sidebar__logo">
+					<img src="img/logo.png" alt="chulakov ru" class="sidebar__logo-img">
+				</div>
+				<nav class="sidebar__nav">
+					<ul class="sidebar__nav-list">
+						<li class="li-light sidebar__nav-item "><a href="#" class="sidebar__nav-link"><span>Первая ссылка</span></a></li>
+						<li class="li-light sidebar__nav-item active"><a href="#" class="sidebar__nav-link"><span>Вторая ссылка (Активная)</span></a></li>
+						<li class="li-light sidebar__nav-item"><a href="#" class="sidebar__nav-link"><span>Третья ссылкa</span></a></li>
+						<li class="li-black sidebar__nav-item"><a href="#" class="sidebar__nav-link">  <span>Личный кабинет</span> </a></li>
+						<li class="li-black sidebar__nav-item"><a href="#" class="sidebar__nav-link"> <span>Выйти</span></a></li>
+					</ul>
+				</nav>
+			</aside>
+			<!-- / Боковая панель / -->
+			<!-- Контент страницы -->
+			<section class="page">
+				<!-- Заголовок страницы -->
+				<div class="page__title">
+					<h1 class="page__title-offer">
+						Заголовок страницы
+					</h1>
+					<p class="page__title-text">
+						В отличие от пылевого и ионного хвостов, направление поступает
+						<br>в лимногляциальный часовой угол
+					</p>
+				</div>
+				<!-- / Заголовок страницы / -->
+				<!-- Информация по оплате  -->
+				<div class="page__pay">
+					<h3 class="page__pay-title">Информация по оплате:</h3>
+					<table class="page__pay-table">
+						<tr>
+							<td class="page__pay-name">Номер счета:</td>
+							<td class="page__pay-value">87123658716587</td>
+						</tr>
+						<tr>
+							<td class="page__pay-name">Сумма платежа:</td>
+							<td class="page__pay-value">100руб.</td>
+						</tr>
+					</table> 
+				</div>
+				<!-- / Информация по оплате / -->
+				<form action="#" class="card">
+					<h2 class="card__title">Данные банковской карты</h2>
+					<div class="card-bg1">
+						<div class="card__label">Номер карты</div>
+						<div class="card__number">
+							<input type="hidden" id="Card" name="Номер карты" value="">
+							<input type="text" id="CardNumber1" required class="card__number-input card__input" placeholder="0000" value="" maxlength="4">
+							<input type="text" id="CardNumber2" required class="card__number-input card__input" placeholder="0000" value="" maxlength="4">
+							<input type="text" id="CardNumber3" required class="card__number-input card__input" placeholder="0000" value="" maxlength="4">
+							<input type="text" id="CardNumber4" required class="card__number-input card__input" placeholder="0000" value="" maxlength="4">
+						</div>
+						<div class="card__label">Срок действия</div>
+						<select name="Месяц"  id=""  class="card__input-moon card__input">
+							<option value="1">01</option>
+							<option value="2">02</option>
+							<option value="3">03</option>
+							<option value="4">04</option>
+							<option value="5">05</option>
+							<option value="6">06</option>
+							<option value="7">07</option>
+							<option value="8">08</option>
+							<option value="9">09</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+						</select>
+						<select name="Год"  id=""  class="card__input-year card__input">
+							<option value="2018">2018</option>
+							<option value="2019">2019</option>
+							<option value="2020">2020</option>
+							<option value="2021">2021</option>
+							<option value="2022">2022</option>
+							<option value="2023">2023</option>
+							<option value="2024">2024</option>
+							<option value="2025">2025</option>
+						</select>
+						<br>
+						<input type="text" required placeholder="Держатель карты" class="card__input-name card__input">
+					</div>	
+
+					<div class="card-bg2">
+						<div class="card__cvc">
+
+							<div class="card__label">Код CVV2 / CVC2</div>
+							<div class="card__cvc-container">
+								<div class="card__cvc-hint">
+									Тут должен быть текст подсказки, я его не нашел, теперь тут живет этот текcт (помилуйте) :D
+								</div>
+								<div class="card__cvc-hint-button">
+									<div>?</div>
+								</div>
+								<input type="text" class="card__input-cvc card__input"  required value="" maxlength="3">
+							</div>
+						</div>
+					</div>
+					<button class="card__button">Отправить</button>
+				</form>
+				<div class="footer">
+					Исходя из астатической системы координат Булгакова, соединение стабильно. Краевая часть артезианского бассейна, которая в настоящее время находится ниже уровня моря, ослабляет систематический уход. Лисичка традиционно трансформирует прецессионный годовой параллакс.
+					<br><br>Выклинивание абсолютно аккумулирует твердый pадиотелескоп Максвелла.
+					<br><br>Алмаз слагает горст. Делювий длительно колеблет лазерный подвижный объект.
+					<br><br>Устойчивость, например, параллельна. Аргумент перигелия определяет боксит. Проекция вертикально дает уходящий диабаз. Если пренебречь малыми величинами, то видно, что угол крена покрывает вибрирующий волчок, что обусловлено не только первичными неровностями эрозионно-тектонического рельефа поверхности кристаллических пород, но и проявлениями долее поздней блоковой тектоники. Засветка неба заставляет иначе взглянуть на то, что такое волчок.
+				</div>
+			</section>
+			<!-- / Контент страницы / -->
+
+		</div>
+	</main>
+	<!-- / Главный Контейнер / -->
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
