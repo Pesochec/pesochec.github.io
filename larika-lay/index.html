@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link rel="icon" href="favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon-180x180.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600|Rubik:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.bundle.css" />
+    <title>Заголовок | Проект</title>
+    <meta name="description" content="Описание" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="flex">
+          <div class="header__left">
+            <div class="logo">
+              <img src="img/logo.svg" class="logo__img" alt="" />
+            </div>
+          </div>
+          <div class="header__right">
+            <div class="header__contacts">
+              <div class="flex flex-justify-end flex-align-center">
+                <div class="header__contacts-item">
+                  <a href="/contacts.html" class="header__contacts-link flex flex-align-end">
+                    <span class="header__contacts-icon">
+                      <img src="img/icons/place.svg" alt="" class="header__contacts-image" />
+                    </span>
+                    <span>
+                      г.Иркутск ул.Байкальская д.152
+                    </span>
+                  </a>
+                </div>
+                <div class="header__contacts-item">
+                  <a href="/contacts.html" class="header__contacts-link flex flex-align-end">
+                    <span class="header__contacts-icon">
+                      <img src="img/icons/phone.svg" alt="" class="header__contacts-image" />
+                    </span>
+                    <span>
+                      +7(914)920-35-35
+                    </span>
+                  </a>
+                </div>
+                <div class="header__contacts-item">
+                  <button
+                    class="header__contacts-button button button--fill button--dark font-semi"
+                    data-modal="callback"
+                  >
+                    ЗАКАЗАТЬ ЗВОНОК
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="header__menu">
+              <nav class="menu menu__desctop">
+                <ul class="menu__container flex flex-wrap">
+                  <li class="menu__item">
+                    <a href="/catalog.html" class="menu__link">
+                      Каталог
+                    </a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="/aboutus.html" class="menu__link">
+                      О компании
+                    </a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="/sale.html" class="menu__link">
+                      Акции
+                    </a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="/news.html" class="menu__link">
+                      Новости
+                    </a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="/howbuy.html" class="menu__link">
+                      Как купить
+                    </a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="/contacts.html" class="menu__link">
+                      Контакты
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <nav class="menu menu__mobile">
+                <div class="flex flex-justify-between flex-align-center">
+                  <div class="logo">
+                    <img src="img/logo.svg" class="logo__img" alt="" />
+                  </div>
+                  <div class="burger">
+                    <div class="burger__button">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                </div>
+                <ul class="menu__container menu__mobile--container">
+                  <li class="menu__item">
+                    <a href="/catalog.html" class="menu__link">
+                      Каталог
+                    </a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="/aboutus.html" class="menu__link">
+                      О компании
+                    </a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="/sale.html" class="menu__link">
+                      Акции
+                    </a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="/news.html" class="menu__link">
+                      Новости
+                    </a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="/howbuy.html" class="menu__link">
+                      Как купить
+                    </a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="/contacts.html" class="menu__link">
+                      Контакты
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="header__search">
+              <div class="flex flex-align-center flex-justify-end">
+                <div class="search">
+                  <form class="search__form">
+                    <label for="" class="search__label">
+                      <input
+                        type="text"
+                        autocomplete="off"
+                        class="form-input search__input"
+                        name="search"
+                        id="search"
+                      />
+                    </label>
+                    <button class="search__button button flex flex-align-center flex-justify-center">
+                      <img src="img/icons/search.svg" alt="" />
+                    </button>
+                  </form>
+                </div>
+                <button class="minicart flex flex-align-start js-open-minicart">
+                  <span class="minicart__icon">
+                    <img src="img/icons/bag.svg" class="minicart__icon-img" alt="" />
+                  </span>
+                  <span class="minicart__currency">
+                    5300Р
+                  </span>
+                </button>
+              </div>
+              <div class="minicart-list">
+                <h4 class="minicart-list__title font-rubik">
+                  КОРЗИНА
+                </h4>
+                <ul class="minicart-list__list">
+                  <li class="minicart-list__item font-rubik">
+                    <div class="flex flex-align-center">
+                      <div class="minicart-list__image">
+                        <img src="img/products/1.jpg" alt="" class="minicart-list__img" />
+                      </div>
+                      <div class="minicart-list__product">
+                        <h5 class="minicart-list__product-title">Комплект детский</h5>
+                      </div>
+                      <div class="minicart-list__count">
+                        <div class="card-product__buttons-count flex-align-center flex flex-justify-center">
+                          <button class="card-product__buttons-minus card-product__count ">
+                            <img src="img/cardproducts/minus.svg" alt="" />
+                          </button>
+                          <input type="number" class="" name="count" class="" value="1" />
+                          <button class="card-product__buttons-plus card-product__count">
+                            <img src="img/cardproducts/plus.svg" alt="" />
+                          </button>
+                        </div>
+                      </div>
+                      <div class="minicart-list__price">
+                        2500р.
+                      </div>
+                      <div class="minicart-list__delete">
+                        <button class="minicart-list__delete-button">
+                          <img src="img/icons/delete.svg" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="minicart-list__item font-rubik">
+                    <div class="flex flex-align-center">
+                      <div class="minicart-list__image">
+                        <img src="img/products/1.jpg" alt="" class="minicart-list__img" />
+                      </div>
+                      <div class="minicart-list__product">
+                        <h5 class="minicart-list__product-title">Комплект детский</h5>
+                      </div>
+                      <div class="minicart-list__count">
+                        <div class="card-product__buttons-count flex-align-center flex flex-justify-center">
+                          <button class="card-product__buttons-minus card-product__count ">
+                            <img src="img/cardproducts/minus.svg" alt="" />
+                          </button>
+                          <input type="number" class="" name="count" class="" value="1" />
+                          <button class="card-product__buttons-plus card-product__count">
+                            <img src="img/cardproducts/plus.svg" alt="" />
+                          </button>
+                        </div>
+                      </div>
+                      <div class="minicart-list__price">
+                        2500р.
+                      </div>
+                      <div class="minicart-list__delete">
+                        <button class="minicart-list__delete-button">
+                          <img src="img/icons/delete.svg" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="minicart-list__subtotal font-rubik">
+                  <div class="minicart-list__subtotal-summ flex flex-justify-between">
+                    <div class="minicart-list__subtotal-title">
+                      Сумма:
+                    </div>
+                    <div class="minicart-list__subtotal-value">
+                      10 000р.
+                    </div>
+                  </div>
+                  <div class="minicart-list__subtotal-summ minicart-list__subtotal--red flex flex-justify-between">
+                    <div class="minicart-list__result-title">
+                      Скидка:
+                    </div>
+                    <div class="minicart-list__result-value">
+                      2500р
+                    </div>
+                  </div>
+                </div>
+                <div class="minicart-list__result font-rubik">
+                  <div class="minicart-list__result-summ flex flex-justify-between">
+                    <div class="minicart-list__result-title">
+                      Итог:
+                    </div>
+                    <div class="minicart-list__result-value">
+                      7500р.
+                    </div>
+                  </div>
+                </div>
+                <div class="flex font-rubik">
+                  <a href="#" class="button button--pink minicart-list__button">
+                    ОФОРМИТЬ
+                  </a>
+                  <a href="#" class="button button--fill button--dark minicart-list__button">
+                    ПЕРЕЙТИ В КОРЗИНУ
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="promoslider">
+      <div class="container">
+        <div class="slider promoslider__slider" id="promoslider">
+          <div class="slier__row promoslider__slider-row flex">
+            <div class="slider__item promoslider__item">
+              <div class="flex">
+                <div class="promoslider__left">
+                  <div class="promoslider__slice" style="background: #F7E0BB;"></div>
+                  <img src="img/promoslider/1.jpg" alt="" class="promoslider__image" />
+                </div>
+                <div class="promoslider__right flex flex-align-center">
+                  <div class="promoslider__right-bg" style="background: #F7E0BB;"></div>
+                  <div class="promoslider__slice" style="background: #F7E0BB;"></div>
+                  <div class="promoslider__info text-center">
+                    <h2 class="promoslider__title">
+                      НОВИНКИ
+                    </h2>
+                    <p class="promoslider__description font-rubik">
+                      Новое поступление детского текстиля , только современные и натуральные материалы
+                    </p>
+                    <a href="#" class="button button--dark button--fill promoslider__button">ПЕРЕЙТИ В РАЗДЕЛ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slider__item promoslider__item">
+              <div class="flex">
+                <div class="promoslider__left">
+                  <div class="promoslider__slice" style="background: #FEDAD5;"></div>
+                  <img src="img/promoslider/2.jpg" alt="" class="promoslider__image" />
+                </div>
+                <div class="promoslider__right flex flex-align-center">
+                  <div class="promoslider__right-bg" style="background: #FEDAD5;"></div>
+                  <div class="promoslider__slice" style="background: #FEDAD5;"></div>
+                  <div class="promoslider__info text-center">
+                    <h2 class="promoslider__title">
+                      НОВИНКИ2
+                    </h2>
+                    <p class="promoslider__description font-rubik">
+                      Новое поступление детского текстиля , только современные и натуральные материалы
+                    </p>
+                    <a href="#" class="button button--dark button--fill promoslider__button">ПЕРЕЙТИ В РАЗДЕЛ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="promoslider__controls-container">
+            <div class="flex">
+              <div class="promoslider-skip"></div>
+              <div class="slider__controls flex flex-align-center promoslider__controls flex-justify-center">
+                <button class="promoslider__prev">
+                  <img src="img/icons/arrow_left.svg" alt="" />
+                </button>
+                <div class="slider__dots flex"></div>
+                <button class="promoslider__next">
+                  <img src="img/icons/arrow_right.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sampletab">
+      <div class="container">
+        <div class="sampletab__buttons flex flex-wrap">
+          <div class="sampletab__buttons-item flex flex-justify-center active flex-align-center" data-tabs="0">
+            <div class="sampletab__buttons-text">Советуем</div>
+            <div class="sampletab__buttons-icon">
+              <img src="img/icons/month.svg" alt="" />
+            </div>
+          </div>
+          <div class="sampletab__buttons-item flex flex-justify-center flex-align-center" data-tabs="1">
+            <div class="sampletab__buttons-text">Новинки</div>
+            <div class="sampletab__buttons-icon">
+              <img src="img/icons/new.svg" alt="" />
+            </div>
+          </div>
+          <div class="sampletab__buttons-item flex flex-justify-center flex-align-center" data-tabs="2">
+            <div class="sampletab__buttons-text">Хит</div>
+            <div class="sampletab__buttons-icon">
+              <img src="img/icons/hit.svg" alt="" />
+            </div>
+          </div>
+          <div class="sampletab__buttons-item flex flex-justify-center flex-align-center" data-tabs="3">
+            <div class="sampletab__buttons-text">Акция</div>
+            <div class="sampletab__buttons-icon">
+              <img src="img/icons/sale.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="sampletab__contents">
+          <div class="sampletab__content flex active">
+            <div class="product__item sampletab__product">
+              <a href="#" class="product__image sampletab__product-image">
+                <img src="img/products/1.jpg" alt="" />
+              </a>
+              <div class="sampletab__product-info product__info font-rubik">
+                <a href="#" class="sampletab__product-title product__title">
+                  Детский комплект (одеяло и две подушки)
+                </a>
+                <ul class="product__spec sampletab__product-spec">
+                  <li class="product__spec-item">
+                    <span class="product__spec-title">Материал:</span>
+                    <span class="product__spec-value font-light">хлопок 100%</span>
+                  </li>
+                  <li class="product__spec-item">
+                    <span class="product__spec-title">Размер:</span>
+                    <span class="product__spec-value font-light">80х120; 50х50</span>
+                  </li>
+                </ul>
+                <div class="product__price sampletab__product-price">
+                  8 990р.
+                </div>
+              </div>
+              <button class="product__button sampletab__product-button">
+                В корзину
+              </button>
+            </div>
+            <div class="product__item sampletab__product">
+              <a href="#" class="product__image sampletab__product-image">
+                <img src="img/products/1.jpg" alt="" />
+              </a>
+              <div class="sampletab__product-info product__info font-rubik">
+                <a href="#" class="sampletab__product-title product__title">
+                  Детский комплект (одеяло и две подушки)
+                </a>
+                <ul class="product__spec sampletab__product-spec">
+                  <li class="product__spec-item">
+                    <span class="product__spec-title">Материал:</span>
+                    <span class="product__spec-value font-light">хлопок 100%</span>
+                  </li>
+                  <li class="product__spec-item">
+                    <span class="product__spec-title">Размер:</span>
+                    <span class="product__spec-value font-light">80х120; 50х50</span>
+                  </li>
+                </ul>
+                <div class="product__price sampletab__product-price">
+                  8 990р.
+                </div>
+              </div>
+              <button class="product__button sampletab__product-button">
+                В корзину
+              </button>
+            </div>
+            <div class="product__item sampletab__product">
+              <a href="#" class="product__image sampletab__product-image">
+                <img src="img/products/1.jpg" alt="" />
+              </a>
+              <div class="sampletab__product-info product__info font-rubik">
+                <a href="#" class="sampletab__product-title product__title">
+                  Детский комплект (одеяло и две подушки)
+                </a>
+                <ul class="product__spec sampletab__product-spec">
+                  <li class="product__spec-item">
+                    <span class="product__spec-title">Материал:</span>
+                    <span class="product__spec-value font-light">хлопок 100%</span>
+                  </li>
+                  <li class="product__spec-item">
+                    <span class="product__spec-title">Размер:</span>
+                    <span class="product__spec-value font-light">80х120; 50х50</span>
+                  </li>
+                </ul>
+                <div class="product__price sampletab__product-price">
+                  8 990р.
+                </div>
+              </div>
+              <button class="product__button sampletab__product-button">
+                В корзину
+              </button>
+            </div>
+            <div class="product__item sampletab__product">
+              <a href="#" class="product__image sampletab__product-image">
+                <img src="img/products/1.jpg" alt="" />
+              </a>
+              <div class="sampletab__product-info product__info font-rubik">
+                <a href="#" class="sampletab__product-title product__title">
+                  Детский комплект (одеяло и две подушки)
+                </a>
+                <ul class="product__spec sampletab__product-spec">
+                  <li class="product__spec-item">
+                    <span class="product__spec-title">Материал:</span>
+                    <span class="product__spec-value font-light">хлопок 100%</span>
+                  </li>
+                  <li class="product__spec-item">
+                    <span class="product__spec-title">Размер:</span>
+                    <span class="product__spec-value font-light">80х120; 50х50</span>
+                  </li>
+                </ul>
+                <div class="product__price sampletab__product-price">
+                  8 990р.
+                </div>
+              </div>
+              <button class="product__button sampletab__product-button">
+                В корзину
+              </button>
+            </div>
+          </div>
+          <div class="sampletab__content flex" style="display: none;">
+            <div class="product__item sampletab__product">
+              <a href="#" class="product__image sampletab__product-image">
+                <img src="img/products/1.jpg" alt="" />
+              </a>
+              <div class="sampletab__product-info product__info font-rubik">
+                <a href="#" class="sampletab__product-title product__title">
+                  Детский комплект (одеяло и две подушки)
+                </a>
+                <ul class="product__spec sampletab__product-spec">
+                  <li class="product__spec-item">
+                    <span class="product__spec-title">Материал:</span>
+                    <span class="product__spec-value font-light">хлопок 100%</span>
+                  </li>
+                  <li class="product__spec-item">
+                    <span class="product__spec-title">Размер:</span>
+                    <span class="product__spec-value font-light">80х120; 50х50</span>
+                  </li>
+                </ul>
+                <div class="product__price sampletab__product-price">
+                  8 990р.
+                </div>
+              </div>
+              <button class="product__button sampletab__product-button">
+                В корзину
+              </button>
+            </div>
+            <div class="product__item sampletab__product">
+              <a href="#" class="product__image sampletab__product-image">
+                <img src="img/products/1.jpg" alt="" />
+              </a>
+              <div class="sampletab__product-info product__info font-rubik">
+                <a href="#" class="sampletab__product-title product__title">
+                  Детский комплект (одеяло и две подушки)
+                </a>
+                <ul class="product__spec sampletab__product-spec">
+                  <li class="product__spec-item">
+                    <span class="product__spec-title">Материал:</span>
+                    <span class="product__spec-value font-light">хлопок 100%</span>
+                  </li>
+                  <li class="product__spec-item">
+                    <span class="product__spec-title">Размер:</span>
+                    <span class="product__spec-value font-light">80х120; 50х50</span>
+                  </li>
+                </ul>
+                <div class="product__price sampletab__product-price">
+                  8 990р.
+                </div>
+              </div>
+              <button class="product__button sampletab__product-button">
+                В корзину
+              </button>
+            </div>
+            <div class="product__item sampletab__product">
+              <a href="#" class="product__image sampletab__product-image">
+                <img src="img/products/1.jpg" alt="" />
+              </a>
+              <div class="sampletab__product-info product__info font-rubik">
+                <a href="#" class="sampletab__product-title product__title">
+                  Детский комплект (одеяло и две подушки)
+                </a>
+                <ul class="product__spec sampletab__product-spec">
+                  <li class="product__spec-item">
+                    <span class="product__spec-title">Материал:</span>
+                    <span class="product__spec-value font-light">хлопок 100%</span>
+                  </li>
+                  <li class="product__spec-item">
+                    <span class="product__spec-title">Размер:</span>
+                    <span class="product__spec-value font-light">80х120; 50х50</span>
+                  </li>
+                </ul>
+                <div class="product__price sampletab__product-price">
+                  8 990р.
+                </div>
+              </div>
+              <button class="product__button sampletab__product-button">
+                В корзину
+              </button>
+            </div>
+            <div class="product__item sampletab__product">
+              <a href="#" class="product__image sampletab__product-image">
+                <img src="img/products/1.jpg" alt="" />
+              </a>
+              <div class="sampletab__product-info product__info font-rubik">
+                <a href="#" class="sampletab__product-title product__title">
+                  Детский комплект (одеяло и две подушки)
+                </a>
+                <ul class="product__spec sampletab__product-spec">
+                  <li class="product__spec-item">
+                    <span class="product__spec-title">Материал:</span>
+                    <span class="product__spec-value font-light">хлопок 100%</span>
+                  </li>
+                  <li class="product__spec-item">
+                    <span class="product__spec-title">Размер:</span>
+                    <span class="product__spec-value font-light">80х120; 50х50</span>
+                  </li>
+                </ul>
+                <div class="product__price sampletab__product-price">
+                  8 990р.
+                </div>
+              </div>
+              <button class="product__button sampletab__product-button">
+                В корзину
+              </button>
+            </div>
+          </div>
+          <div class="sampletab__content flex" style="display: none;">
+            <div class="product__item sampletab__product">
+              <a href="#" class="product__image sampletab__product-image">
+                <img src="img/products/1.jpg" alt="" />
+              </a>
+              <div class="sampletab__product-info product__info font-rubik">
+                <a href="#" class="sampletab__product-title product__title">
+                  Детский комплект (одеяло и две подушки)
+                </a>
+                <ul class="product__spec sampletab__product-spec">
+                  <li class="product__spec-item">
+                    <span class="product__spec-title">Материал:</span>
+                    <span class="product__spec-value font-light">хлопок 100%</span>
+                  </li>
+                  <li class="product__spec-item">
+                    <span class="product__spec-title">Размер:</span>
+                    <span class="product__spec-value font-light">80х120; 50х50</span>
+                  </li>
+                </ul>
+                <div class="product__price sampletab__product-price">
+                  8 990р.
+                </div>
+              </div>
+              <button class="product__button sampletab__product-button">
+                В корзину
+              </button>
+            </div>
+            <div class="product__item sampletab__product">
+              <a href="#" class="product__image sampletab__product-image">
+                <img src="img/products/1.jpg" alt="" />
+              </a>
+              <div class="sampletab__product-info product__info font-rubik">
+                <a href="#" class="sampletab__product-title product__title">
+                  Детский комплект (одеяло и две подушки)
+                </a>
+                <ul class="product__spec sampletab__product-spec">
+                  <li class="product__spec-item">
+                    <span class="product__spec-title">Материал:</span>
+                    <span class="product__spec-value font-light">хлопок 100%</span>
+                  </li>
+                  <li class="product__spec-item">
+                    <span class="product__spec-title">Размер:</span>
+                    <span class="product__spec-value font-light">80х120; 50х50</span>
+                  </li>
+                </ul>
+                <div class="product__price sampletab__product-price">
+                  8 990р.
+                </div>
+              </div>
+              <button class="product__button sampletab__product-button">
+                В корзину
+              </button>
+            </div>
+            <div class="product__item sampletab__product">
+              <a href="#" class="product__image sampletab__product-image">
+                <img src="img/products/1.jpg" alt="" />
+              </a>
+              <div class="sampletab__product-info product__info font-rubik">
+                <a href="#" class="sampletab__product-title product__title">
+                  Детский комплект (одеяло и две подушки)
+                </a>
+                <ul class="product__spec sampletab__product-spec">
+                  <li class="product__spec-item">
+                    <span class="product__spec-title">Материал:</span>
+                    <span class="product__spec-value font-light">хлопок 100%</span>
+                  </li>
+                  <li class="product__spec-item">
+                    <span class="product__spec-title">Размер:</span>
+                    <span class="product__spec-value font-light">80х120; 50х50</span>
+                  </li>
+                </ul>
+                <div class="product__price sampletab__product-price">
+                  8 990р.
+                </div>
+              </div>
+              <button class="product__button sampletab__product-button">
+                В корзину
+              </button>
+            </div>
+            <div class="product__item sampletab__product">
+              <a href="#" class="product__image sampletab__product-image">
+                <img src="img/products/1.jpg" alt="" />
+              </a>
+              <div class="sampletab__product-info product__info font-rubik">
+                <a href="#" class="sampletab__product-title product__title">
+                  Детский комплект (одеяло и две подушки)
+                </a>
+                <ul class="product__spec sampletab__product-spec">
+                  <li class="product__spec-item">
+                    <span class="product__spec-title">Материал:</span>
+                    <span class="product__spec-value font-light">хлопок 100%</span>
+                  </li>
+                  <li class="product__spec-item">
+                    <span class="product__spec-title">Размер:</span>
+                    <span class="product__spec-value font-light">80х120; 50х50</span>
+                  </li>
+                </ul>
+                <div class="product__price sampletab__product-price">
+                  8 990р.
+                </div>
+              </div>
+              <button class="product__button sampletab__product-button">
+                В корзину
+              </button>
+            </div>
+          </div>
+          <div class="sampletab__content flex" style="display: none;">
+            <div class="product__item sampletab__product">
+              <a href="#" class="product__image sampletab__product-image">
+                <img src="img/products/1.jpg" alt="" />
+              </a>
+              <div class="sampletab__product-info product__info font-rubik">
+                <a href="#" class="sampletab__product-title product__title">
+                  Детский комплект (одеяло и две подушки)
+                </a>
+                <ul class="product__spec sampletab__product-spec">
+                  <li class="product__spec-item">
+                    <span class="product__spec-title">Материал:</span>
+                    <span class="product__spec-value font-light">хлопок 100%</span>
+                  </li>
+                  <li class="product__spec-item">
+                    <span class="product__spec-title">Размер:</span>
+                    <span class="product__spec-value font-light">80х120; 50х50</span>
+                  </li>
+                </ul>
+                <div class="product__price sampletab__product-price">
+                  8 990р.
+                </div>
+              </div>
+              <button class="product__button sampletab__product-button">
+                В корзину
+              </button>
+            </div>
+            <div class="product__item sampletab__product">
+              <a href="#" class="product__image sampletab__product-image">
+                <img src="img/products/1.jpg" alt="" />
+              </a>
+              <div class="sampletab__product-info product__info font-rubik">
+                <a href="#" class="sampletab__product-title product__title">
+                  Детский комплект (одеяло и две подушки)
+                </a>
+                <ul class="product__spec sampletab__product-spec">
+                  <li class="product__spec-item">
+                    <span class="product__spec-title">Материал:</span>
+                    <span class="product__spec-value font-light">хлопок 100%</span>
+                  </li>
+                  <li class="product__spec-item">
+                    <span class="product__spec-title">Размер:</span>
+                    <span class="product__spec-value font-light">80х120; 50х50</span>
+                  </li>
+                </ul>
+                <div class="product__price sampletab__product-price">
+                  8 990р.
+                </div>
+              </div>
+              <button class="product__button sampletab__product-button">
+                В корзину
+              </button>
+            </div>
+            <div class="product__item sampletab__product">
+              <a href="#" class="product__image sampletab__product-image">
+                <img src="img/products/1.jpg" alt="" />
+              </a>
+              <div class="sampletab__product-info product__info font-rubik">
+                <a href="#" class="sampletab__product-title product__title">
+                  Детский комплект (одеяло и две подушки)
+                </a>
+                <ul class="product__spec sampletab__product-spec">
+                  <li class="product__spec-item">
+                    <span class="product__spec-title">Материал:</span>
+                    <span class="product__spec-value font-light">хлопок 100%</span>
+                  </li>
+                  <li class="product__spec-item">
+                    <span class="product__spec-title">Размер:</span>
+                    <span class="product__spec-value font-light">80х120; 50х50</span>
+                  </li>
+                </ul>
+                <div class="product__price sampletab__product-price">
+                  8 990р.
+                </div>
+              </div>
+              <button class="product__button sampletab__product-button">
+                В корзину
+              </button>
+            </div>
+            <div class="product__item sampletab__product">
+              <a href="#" class="product__image sampletab__product-image">
+                <img src="img/products/1.jpg" alt="" />
+              </a>
+              <div class="sampletab__product-info product__info font-rubik">
+                <a href="#" class="sampletab__product-title product__title">
+                  Детский комплект (одеяло и две подушки)
+                </a>
+                <ul class="product__spec sampletab__product-spec">
+                  <li class="product__spec-item">
+                    <span class="product__spec-title">Материал:</span>
+                    <span class="product__spec-value font-light">хлопок 100%</span>
+                  </li>
+                  <li class="product__spec-item">
+                    <span class="product__spec-title">Размер:</span>
+                    <span class="product__spec-value font-light">80х120; 50х50</span>
+                  </li>
+                </ul>
+                <div class="product__price sampletab__product-price">
+                  8 990р.
+                </div>
+              </div>
+              <button class="product__button sampletab__product-button">
+                В корзину
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="usefullinfo">
+      <div class="container">
+        <h2 class="section-title">Полезная информация</h2>
+        <div class="flex font-rubik usefullinfo__container">
+          <div class="usefullinfo__item usefullinfo__delivery text-center" style="background-color: #F4F1BB;">
+            <h3 class="usefullinfo__delivery-title font-medium">
+              БЕСПЛАТНАЯ ДОСТАВКА
+            </h3>
+            <p class="usefullinfo__delivery-text font-default font-medium">
+              Бесплатная доставка <br />
+              по г.Иркутску при заказе от 5000р.
+            </p>
+            <img src="img/icons/vich.svg" alt="" class="usefullinfo__delivery-icon" />
+          </div>
+          <div class="usefullinfo__item">
+            <img src="img/usefull/1.jpg" class="usefullinfo__img" alt="" />
+            <div class="usefullinfo__info" style="background-color: #FEDAD5;">
+              <h3 class="usefullinfo__title font-normal">
+                НОВАЯ СЕРИЯ ИЗ ГИПОАЛЕРГЕННЫХ МАТЕРИАЛОВ
+              </h3>
+            </div>
+          </div>
+          <div class="usefullinfo__item">
+            <img src="img/usefull/2.jpg" class="usefullinfo__img" alt="" />
+            <div class="usefullinfo__info" style="background-color: #F7E0BB;">
+              <h3 class="usefullinfo__title font-normal">
+                НОВАЯ СЕРИЯ ИЗ ГИПОАЛЕРГЕННЫХ МАТЕРИАЛОВ
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="aboutus">
+      <div class="container">
+        <div class="flex flex-align-center">
+          <div class="aboutus__info">
+            <h2 class="section-title">О компании</h2>
+            <p>
+              Какими бывают детские ткани, требования к материалам для постельного белья для новорожденных и более
+              взрослых детей. Обзор лучших натуральных материй, которые подойдут для детских вещей. ... Одежда и другой
+              текстиль для ребенка должны не только украшать его, хотя это несомненно очень важно, но и соответствовать
+              главному требованию: не навредить. Поэтому любая ткань, которая контактирует с нежной детской кожей,
+              должна быть такой: мягкой; уютной
+            </p>
+          </div>
+          <div class="aboutus__image">
+            <img src="img/aboutus__img.png" alt="" class="aboutus__img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="flex flex-align-center flex-wrap flex-justify-center">
+          <div class="footer__logo">
+            <img src="img/logo__footer.png" alt="" class="footer__logo-image" />
+          </div>
+          <div class="footer__contacts footer__item">
+            <ul class="footer__contacts-list">
+              <li class="footer__contacts-item">
+                <a href="" class="footer__contacts-link flex flex-align-center">
+                  <span class="footer__contacts-icon">
+                    <img src="img/icons/footer/marker.svg" alt="" class="footer__contacts-img" />
+                  </span>
+                  <span class="footer__contacts-text">
+                    г.Иркутск ул.Ленина д.1
+                  </span>
+                </a>
+              </li>
+              <li class="footer__contacts-item">
+                <a href="" class="footer__contacts-link flex flex-align-center">
+                  <span class="footer__contacts-icon">
+                    <img src="img/icons/footer/phone.svg" alt="" class="footer__contacts-img" />
+                  </span>
+                  <span class="footer__contacts-text">
+                    +7(914)920-35-35
+                  </span>
+                </a>
+              </li>
+              <li class="footer__contacts-item">
+                <a href="" class="footer__contacts-link flex flex-align-center">
+                  <span class="footer__contacts-icon">
+                    <img src="img/icons/footer/mail.svg" alt="" class="footer__contacts-img" />
+                  </span>
+                  <span class="footer__contacts-text">
+                    sale@magazin.ru
+                  </span>
+                </a>
+              </li>
+              <li class="footer__contacts-item">
+                <a href="" class="footer__contacts-link flex flex-align-center">
+                  <span class="footer__contacts-icon">
+                    <img src="img/icons/footer/clock.svg" alt="" class="footer__contacts-img" />
+                  </span>
+                  <span class="footer__contacts-text">
+                    Ежедневно с 8.00 до 20.00
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu footer__item">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">
+                  Каталог
+                </a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">
+                  О компании
+                </a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">
+                  Получение и оплата
+                </a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">
+                  Новости
+                </a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__social footer__item">
+            <p class="font-medium">Будь всегда в курсе!</p>
+            <form class="footer__social-sub flex">
+              <label for="" class="form__label footer__label">
+                <input
+                  type="email"
+                  autocomplete="off"
+                  class="footer__input form-input form-input--line form-input--white"
+                  name="email"
+                  placeholder="Введите email"
+                />
+              </label>
+              <button class="footer__button button button--white flex flex-align-center flex-justify-center">
+                Подписаться
+              </button>
+            </form>
+            <p class="footer__social-small">Мы в соц.сетях:</p>
+            <ul class="footer__social-list flex">
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                  <img src="img/icons/footer/insta.svg" alt="" />
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                  <img src="img/icons/footer/vk.svg" alt="" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/bundle.js"></script>
+  </body>
+</html>
